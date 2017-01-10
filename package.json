@@ -1,0 +1,17 @@
+{
+  "name": "london-web-perf-2016-pwas",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run watch & npm run serve",
+    "serve": "node devServer",
+    "build": "cleaver src/index.md && echo 'Finished cleaver build'",
+    "build:debug": "cleaver --debug src/index.md && echo 'Finished cleaver build'",
+    "watch": "watch 'npm run build' src"
+  },
+  "devDependencies": {
+    "cleaver": "^0.8.2",
+    "express": "^4.14.0",
+    "watch": "^0.17.1"
+  }
+}

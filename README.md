@@ -1,4 +1,4 @@
-# "Beyond the Browser: PWAs, WebVR & Web Bluetooth" - London JavaScript
+# "Beyond the Browser: PWAs, WebVR & Physical Web" - London JavaScript
 
 My slides for [London JavaScript, Jan 2017](https://www.meetup.com/London-JavaScript-Community/events/235924973/).
 

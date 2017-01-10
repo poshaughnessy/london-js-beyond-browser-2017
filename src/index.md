@@ -7,7 +7,7 @@ controls: false
 
 # Beyond the Browser
 
-## PWAs, WebVR and Web Bluetooth
+## PWAs, WebVR and Physical Web
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>

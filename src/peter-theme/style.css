@@ -316,6 +316,7 @@ pre {
 
 pre code {
   display: block;
+  color: #444;
   font-size: 1.3em;
   line-height: 1.5em;
   overflow-y: hidden;
@@ -537,6 +538,16 @@ pre .xml .cdata {
 
 .credit a:hover {
   border-bottom: 1px solid #666;
+}
+
+.corner-logos {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.corner-logos img {
+  max-width: 100px;
 }
 
 /* For background images so we can apply filters */

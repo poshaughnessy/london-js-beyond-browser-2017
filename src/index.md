@@ -15,6 +15,8 @@ controls: false
   <p>[@samsunginternet](https://twitter.com/samsunginternet)</p>
 </div>
 
+<div class="credit">[flickr.com/photos/armadillo444/](https://www.flickr.com/photos/armadillo444/2901378790)</div>
+
 --
 
 ![Samsung Internet icon on homescreen](images/samsung-internet-home.png)

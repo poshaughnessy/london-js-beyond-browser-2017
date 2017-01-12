@@ -1,21 +1,27 @@
 /*
- * Based on github.com/sjaakvandenberg/cleaver-dark
+ * Originally based on github.com/sjaakvandenberg/cleaver-dark
  */
 
-/*
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Bangers', cursive;
-font-family: 'Coda', cursive;
-font-family: 'Hind Vadodara', sans-serif;
-font-family: 'Contrail One', cursive;
-font-family: 'Homenaje', sans-serif;
-font-family: 'Share', cursive;
-font-family: 'Strait', sans-serif;
-*/
+/* Local fonts */
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Play/Play-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Play/Play-Bold.ttf') format('truetype');
+}
+
+
 /* Theme Styles */
 body {
-  font-family: 'Share', 'Helvetica', sans-serif;
+  font-family: 'Play', 'Helvetica', sans-serif;
   font-size: 100%;
   text-align: center;
   overflow: hidden;
@@ -40,7 +46,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: #eee;
+  background-color: #333;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -136,10 +142,10 @@ img {
 
 h1, h2 {
   margin: 0 0 0.25em 0;
-  font-family: 'Sarpanch';  
+  font-family: 'Play';  
   font-weight: bold;
   transform: scaleX(1.05);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 h1 {
@@ -499,6 +505,22 @@ pre .xml .cdata {
   margin-top: 3em;
 }
 
+.credit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.5em;
+  color: #666;
+}
+
+.credit a {
+  color: #666;
+}
+
+.credit a:hover {
+  border-bottom: 1px solid #666;
+}
+
 /* Print styles used for saving to PDF */
 @media print {
   * {
@@ -518,6 +540,14 @@ pre .xml .cdata {
 }
 
 /* Slide specific styles here */
+
+#slide-1 h1 {
+  margin-top: 0.5em;
+}
+
+#slide-1 .contact {
+  margin-top: 6em;
+}
 
 .bg-rocket {
   background-image: url(images/flickr_armadillo444_2901378790-dark.jpg);

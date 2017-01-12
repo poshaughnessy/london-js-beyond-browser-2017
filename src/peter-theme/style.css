@@ -2,48 +2,24 @@
  * Based on github.com/sjaakvandenberg/cleaver-dark
  */
 
-/* Local Fonts */
-
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Lora/Lora-Regular.ttf') format('truetype'),
-  url('fonts/Lora/Lora-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/Lora/Lora-Bold.ttf') format('truetype'),
-  url('fonts/Lora/Lora-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/Lora/Lora-Italic.ttf') format('truetype'),
-  url('fonts/Lora/Lora-Italic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 700;
-  src: url('fonts/Lora/Lora-BoldItalic.ttf') format('truetype'),
-  url('fonts/Lora/Lora-BoldItalic.ttf') format('truetype');
-}
-
-
+/*
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Bangers', cursive;
+font-family: 'Coda', cursive;
+font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Contrail One', cursive;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Share', cursive;
+font-family: 'Strait', sans-serif;
+*/
 /* Theme Styles */
 body {
-  font-family: 'Lora', 'Georgia', 'Helvetica', serif;
+  font-family: 'Share', 'Helvetica', sans-serif;
   font-size: 100%;
   text-align: center;
   overflow: hidden;
-  color: #333;
+  color: #fff;
 }
 
 html,
@@ -65,7 +41,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   background-color: #eee;
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,20 +134,23 @@ img {
   border-left-color: #272822;
 }
 
+h1, h2 {
+  margin: 0 0 0.25em 0;
+  font-family: 'Sarpanch';  
+  font-weight: bold;
+  transform: scaleX(1.05);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 h1 {
-  margin: 0 0 0.5em 0;
   font-size: 275%;
   line-height: 1.5;
-  font-weight: normal;
-  transform: scaleX(1.05);
 }
 
 h2 {
-  margin: 0 0 0.5em 0;
-  font-size: 175%;
-  line-height: 1.4;
-  font-weight: normal;
-  transform: scaleX(1.05);
+  font-size: 150%;
+  font-style: italic;
+  line-height: 1.4;  
 }
 
 h2:last-child {
@@ -540,4 +519,6 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
-
+.bg-rocket {
+  background-image: url(images/flickr_armadillo444_2901378790-dark.jpg);
+}

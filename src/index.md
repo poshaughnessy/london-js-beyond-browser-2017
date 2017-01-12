@@ -3,11 +3,11 @@ output: public/index.html
 theme: peter-theme
 controls: false
 
---
+-- bg-rocket
 
 # Beyond the Browser
 
-## PWAs, WebVR and Physical Web
+## PWAs, WebVR & Physical Web
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>

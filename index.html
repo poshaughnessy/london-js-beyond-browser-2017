@@ -156,13 +156,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 275%;
+  font-size: 300%;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 150%;
-  font-style: italic;
+  font-size: 175%;
   line-height: 1.4;  
 }
 
@@ -507,6 +506,24 @@ pre .xml .cdata {
   }
 }
 
+/* Print styles used for saving to PDF */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    display: flex;
+    page-break-after: always;
+    background-color: #fff;
+  }
+}
+
 /* Common slide contents */
 .contact {
   margin-top: 3em;
@@ -528,22 +545,38 @@ pre .xml .cdata {
   border-bottom: 1px solid #666;
 }
 
-/* Print styles used for saving to PDF */
-@media print {
-  * {
-    -webkit-print-color-adjust: exact;
-  }  
-  .slide {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
-    display: flex;
-    page-break-after: always;
-    background-color: #fff;
-  }
+/* For background images so we can apply filters */
+.slide {
+  overflow: auto;
+  position: relative;
+}
+/* Vignette effect */
+.slide:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  box-shadow: inset 0 0 12em #000;
+  width: 100%;
+  height: 100%;
+}
+/* Background image */
+.slide:after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) grayscale(0.5) brightness(0.3);
+}
+.slide-content {
+  z-index: 1;
 }
 
 /* Slide specific styles here */
@@ -552,12 +585,16 @@ pre .xml .cdata {
   margin-top: 0.5em;
 }
 
+#slide-1 h2 {
+  font-style: italic;
+}
+
 #slide-1 .contact {
   margin-top: 6em;
 }
 
-.bg-rocket {
-  background-image: url(images/flickr_armadillo444_2901378790-dark.jpg);
+.bg-rocket:after {
+  background-image: url(images/flickr_armadillo444_2901378790.jpg);
 }
 
   </style>

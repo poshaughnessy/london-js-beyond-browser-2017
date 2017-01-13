@@ -3,19 +3,53 @@
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Web Bluetooth Remote</title>
+  <style>
+    body {
+      font-family: Helvetica, arial, sans-serif;
+      text-align: center;
+      background: #222;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 5px 0 30px 0;
+    }
+    h2 {
+      font-size: 1.3em;
+      margin: 0;
+      padding-top: 20px;
+    }
+    button {
+      background: #ccc;
+      border-radius: 8px;
+      border: 0;
+      padding: 8px 16px;
+      display: block;
+      margin: 30px auto;
+      font-size: 1.5em;
+      min-width: 190px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Web Bluetooth Remote</h1>
-  <button id="btn-connect">Connect</button>
-  <button id="btn-left">Left</button>
-  <button id="btn-right">Right</button>
+  <h2>Web Bluetooth</h2>
+  <h1>Presentation Remote</h1>
+  <button id="btn-connect">Connect 📡</button>
+  <button id="btn-left">Left ⬅️</button>
+  <button id="btn-right">Right ➡️</button>
   <script>
 
     var serviceUuid = 0xB1BF;
     var charUuid = 0xC2CF;
     var characteristic;
 
+    var btnConnect = document.getElementById('btn-connect');
+    var btnLeft = document.getElementById('btn-left');
+    var btnRight = document.getElementById('btn-right');
+
     function connect() {
+
+      btnConnect.innerHTML = 'Connecting ⏳';
 
       navigator.bluetooth.requestDevice({
           filters: [{ services: [serviceUuid] }]
@@ -35,6 +69,7 @@
         .then(function(char) {
           console.log('Characteristic', char);
           characteristic = char;
+          btnConnect.innerHTML = 'Connected 👍?';
         });
 
     }
@@ -57,10 +92,6 @@
       cmd[0] = 2;
       write(cmd);
     }
-
-    var btnConnect = document.getElementById('btn-connect');
-    var btnLeft = document.getElementById('btn-left');
-    var btnRight = document.getElementById('btn-right');
 
     btnConnect.addEventListener('click', connect, false);
     btnLeft.addEventListener('click', left, false);

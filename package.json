@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "npm run watch & npm run serve",
-    "serve": "node devServer",
+    "serve": "node server",
     "build": "cleaver src/index.md && echo 'Finished cleaver build'",
     "build:debug": "cleaver --debug src/index.md && echo 'Finished cleaver build'",
     "watch": "watch 'npm run build' src"
@@ -14,5 +14,8 @@
     "cleaver": "^0.8.2",
     "express": "^4.14.0",
     "watch": "^0.17.1"
+  },
+  "dependencies": {
+    "faye": "^1.2.3"
   }
 }

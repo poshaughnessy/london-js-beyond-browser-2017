@@ -169,3 +169,16 @@ document.body.addEventListener('touchend', function(e) {
     navigate(-1);
   }
 }, false);
+
+
+/**
+ * Web Sockets (Faye) added by Peter - for remote control
+ */
+
+var wsClient = new Faye.Client('http://localhost:9000/ws');
+
+console.log('wsClient', wsClient);
+
+wsClient.subscribe('/remote', function(message) {
+  alert('Remote control says: ' + message);
+});

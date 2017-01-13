@@ -10,6 +10,7 @@
     "watch": "watch 'npm run build' src"
   },
   "devDependencies": {
+    "bleno": "^0.4.1",
     "cleaver": "^0.8.2",
     "express": "^4.14.0",
     "watch": "^0.17.1"

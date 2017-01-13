@@ -787,6 +787,7 @@ Origin-Trial: token_obtained_from_signup</code></pre>
 
 
 
+  <script src="lib/faye-browser-min.js"></script>
   <script type="text/javascript">
     /**
  * Returns the current page number of the presentation.
@@ -959,6 +960,19 @@ document.body.addEventListener('touchend', function(e) {
     navigate(-1);
   }
 }, false);
+
+
+/**
+ * Web Sockets (Faye) added by Peter - for remote control
+ */
+
+var wsClient = new Faye.Client('http://localhost:9000/ws');
+
+console.log('wsClient', wsClient);
+
+wsClient.subscribe('/remote', function(message) {
+  alert('Remote control says: ' + message);
+});
 
   </script>
 </body>

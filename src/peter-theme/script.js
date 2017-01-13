@@ -180,5 +180,17 @@ var wsClient = new Faye.Client('http://localhost:9000/ws');
 console.log('wsClient', wsClient);
 
 wsClient.subscribe('/remote', function(message) {
-  alert('Remote control says: ' + message);
+  console.log('Remote control command: ' + message);
+  switch (message) {
+    case 1: {
+      // Left
+      navigate(-1);
+      break;
+    }
+    case 2: {
+      // Right
+      navigate(1);
+      break;
+    }
+  }
 });

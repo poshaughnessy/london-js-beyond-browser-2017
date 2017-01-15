@@ -17,15 +17,18 @@ controls: false
 
 <div class="credit">[flickr.com/photos/armadillo444/](https://www.flickr.com/photos/armadillo444/2901378790)</div>
 
+<!-- TODO include later? -->
+<!--![Samsung Internet icon on homescreen](images/samsung-internet-home.png)-->
+<!--![Snapwat](images/snapwat.png)-->
+
+
 -- bg-2017
 
 <div class="credit">[pixabay](https://pixabay.com/en/new-year-s-eve-fireworks-2017-1664737/)</div>
 
-<!--![Samsung Internet icon on homescreen](images/samsung-internet-home.png)-->
+-- bg-iphone-launch
 
---
-
-<!--![Snapwat](images/snapwat.png)-->
+<div class="credit">[Wikimedia](https://commons.wikimedia.org/wiki/File:Steve_Jobs_presents_iPhone.jpg)</div>
 
 --
 

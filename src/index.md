@@ -32,6 +32,26 @@ controls: false
 
 --
 
+![StatCounter mobile vs desktop graph](images/internet_usage_2009_2016_ww.png)
+
+--
+
+![xkcd cartoon, Mac/PC](images/xkcd_mac_pc.png)
+
+<div class="credit">[xkcd](http://xkcd.com/934/)</div>
+
+--
+
+![comScore time spent](images/comscore-time-spent.png)
+
+--
+
+![comScore time spent](images/comscore-app-downloads.png)
+
+<div class="credit">[comScore](http://www.comscore.com/Insights/Presentations-and-Whitepapers/2016/The-2016-US-Mobile-App-Report) via [recode.net](http://www.recode.net/2016/9/16/12933780/average-app-downloads-per-month-comscore)</div>
+
+--
+
 > &ldquo;PWAs combine the best of web & the best of native&rdquo; 💯
 
 --

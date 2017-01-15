@@ -3,7 +3,7 @@ output: public/index.html
 theme: peter-theme
 controls: false
 
--- bg-rocket
+-- bg-rocket bg-fade
 
 # Beyond the Browser
 
@@ -17,13 +17,15 @@ controls: false
 
 <div class="credit">[flickr.com/photos/armadillo444/](https://www.flickr.com/photos/armadillo444/2901378790)</div>
 
+-- bg-2017
+
+<div class="credit">[pixabay](https://pixabay.com/en/new-year-s-eve-fireworks-2017-1664737/)</div>
+
+<!--![Samsung Internet icon on homescreen](images/samsung-internet-home.png)-->
+
 --
 
-![Samsung Internet icon on homescreen](images/samsung-internet-home.png)
-
---
-
-![Snapwat](images/snapwat.png)
+<!--![Snapwat](images/snapwat.png)-->
 
 --
 

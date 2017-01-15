@@ -665,12 +665,28 @@ pre .xml .cdata {
 <div class="credit"><a href="http://www.comscore.com/Insights/Presentations-and-Whitepapers/2016/The-2016-US-Mobile-App-Report">comScore</a> via <a href="http://www.recode.net/2016/9/16/12933780/average-app-downloads-per-month-comscore">recode.net</a></div></section>
   </div>
   <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><p><img src="images/address-book.png" alt="Address book access"></p>
+<div class="credit"><a href="http://thenextweb.com/mobile/2012/02/11/following-paths-contact-fiasco-instagram-silently-adds-a-contact-list-access-prompt/">The Next Web</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><p><img src="images/web-native-parity.png" alt="Web nearing parity with native"></p>
+<div class="credit"><a href="https://www.youtube.com/watch?v=YJwrBbze_Ec">What Comes Next For The Web? - Paul Kinlan</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><p><img src="images/comscore-mobile-web-crop.png" alt="comScore mobile web reach"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><p><img src="images/hovis-best-of-both.jpg" alt="Hovis Best of Both"></p>
+<div class="credit"><a href="http://www.morrisqualitybakers.co.uk/goods/hovis-best-of-both-thick/">Morris Quality Bakers</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><blockquote>
 <p>&ldquo;PWAs combine the best of web &amp; the best of native&rdquo; 💯</p>
 </blockquote>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><h2 id="best-of-web-">Best of web 🌎</h2>
 <ul>
 <li>Multi-platform</li>
@@ -680,7 +696,7 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><h2 id="best-of-native-">Best of native  📱</h2>
 <ul>
 <li>Add to Home Screen</li>
@@ -690,17 +706,17 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden" id="slide-15">
     <section class="slide-content"><blockquote>
 <p>&ldquo;PWAs are all about removing friction&rdquo; 🏎</p>
 </blockquote>
 </section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden" id="slide-16">
     <section class="slide-content"><h1 id="service-workers-">Service Workers 🚓</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
+  <div class="slide hidden" id="slide-17">
     <section class="slide-content"><h2 id="1-don-t-cache-too-much-on-install-">1⃣️ Don&#39;t cache too much on install! ⚖</h2>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> RESOURCES = [<span class="hljs-string">'/images/emojione/1f600.svg'</span>, ...];
 
@@ -714,7 +730,7 @@ self.addEventListener(<span class="hljs-string">'install'</span>, <span class="h
 );</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><h2 id="2-urls-not-files-">2⃣️ URLs, not files 🗂</h2>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> RESOURCES = [
   <span class="hljs-string">'/'</span>,
@@ -724,12 +740,12 @@ self.addEventListener(<span class="hljs-string">'install'</span>, <span class="h
 cache.addAll( RESOURCES );</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><h2 id="3-remember-to-check-lighthouse-">3⃣️ Remember to check Lighthouse 🔦🏠</h2>
 <p><img src="images/lighthouse-report.png" alt="Lighthouse" width="80%"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="rendering-preferences-in-order-">Rendering preferences (in order) 👇</h2>
 <ol>
 <li>SSR app shell &amp; initial page. CSR takes over.</li>
@@ -739,7 +755,7 @@ cache.addAll( RESOURCES );</code></pre>
 </ol>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden" id="slide-21">
     <section class="slide-content"><h2 id="easy-caching-strategies-with-sw-toolbox-">Easy caching strategies with sw-toolbox 🔧</h2>
 <ul>
 <li>“cache first”, then fallback to network</li>
@@ -747,14 +763,14 @@ cache.addAll( RESOURCES );</code></pre>
 <pre><code class="lang-javascript">toolbox.router.get(<span class="hljs-string">'/images'</span>, toolbox.cacheFirst);</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden" id="slide-22">
     <section class="slide-content"><ul>
 <li>“network first”, then fallback to cache</li>
 </ul>
 <pre><code class="lang-javascript">toolbox.router.get(<span class="hljs-string">'/api'</span>, toolbox.networkFirst);</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><ul>
 <li>“fastest” — serve whichever comes back first</li>
 </ul>
@@ -766,23 +782,23 @@ cache.addAll( RESOURCES );</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-20">
+  <div class="slide hidden" id="slide-24">
     <section class="slide-content"><h2 id="3-lt-a-download-gt-requests-bypass-sw-">3⃣️ &lt;a download&gt; requests bypass SW 🙉</h2>
 <p><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a></p>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"> <img src="images/sbrowser5.0.png" alt="Samsung Internet"></div></section>
   </div>
-  <div class="slide hidden" id="slide-21">
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h2 id="push-notifications-">Push notifications 🙌</h2>
 <p><img src="images/podle-push-notification.png" alt="Podle push notification" width="25%"/></p>
 <!-- [bit.ly/web-fundamentals-push-notifications](http://bit.ly/web-fundamentals-push-notifications) -->
 
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"> <img src="images/sbrowser5.0.png" alt="Samsung Internet"> <img src="images/firefox.png" alt="Firefox"> <img src="images/opera.png" alt="Opera"></div></section>
   </div>
-  <div class="slide hidden" id="slide-22">
+  <div class="slide hidden" id="slide-26">
     <section class="slide-content"><h1 id="what-s-next-">What&#39;s next? 🆕</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-23">
+  <div class="slide hidden" id="slide-27">
     <section class="slide-content"><h2 id="background-sync-">Background sync ⛰</h2>
 <pre><code class="lang-javascript">navigator.serviceWorker.ready.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reg</span>) </span>{
     <span class="hljs-keyword">return</span> reg.sync.register(<span class="hljs-string">'syncTest'</span>);
@@ -791,19 +807,19 @@ cache.addAll( RESOURCES );</code></pre>
   });</code></pre>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden" id="slide-24">
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><h2 id="foreign-fetch-">Foreign fetch ✈️</h2>
 <pre><code>Link: &lt;/service-worker.js&gt;; rel=&quot;serviceworker&quot;
 Origin-Trial: token_obtained_from_signup</code></pre>
 <p><a href="http://bit.ly/foreign-fetch">bit.ly/foreign-fetch</a></p>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden" id="slide-25">
+  <div class="slide hidden" id="slide-29">
     <section class="slide-content"><h2 id="-snapw-at-https-snapw-at-">🔗 <a href="https://snapw.at">snapw.at</a></h2>
 <h2 id="-github-com-samsunginternet-snapwat-https-github-com-samsunginternet-snapwat-">📃  <a href="https://github.com/SamsungInternet/snapwat">github.com/SamsungInternet/snapwat</a></h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-26">
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <div class="contact">
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>

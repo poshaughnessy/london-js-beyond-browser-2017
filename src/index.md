@@ -52,6 +52,28 @@ controls: false
 
 --
 
+![Address book access](images/address-book.png)
+
+<div class="credit">[The Next Web](http://thenextweb.com/mobile/2012/02/11/following-paths-contact-fiasco-instagram-silently-adds-a-contact-list-access-prompt/)</div>
+
+--
+
+![Web nearing parity with native](images/web-native-parity.png)
+
+<div class="credit">[What Comes Next For The Web? - Paul Kinlan](https://www.youtube.com/watch?v=YJwrBbze_Ec)</div>
+
+--
+
+![comScore mobile web reach](images/comscore-mobile-web-crop.png)
+
+--
+
+![Hovis Best of Both](images/hovis-best-of-both.jpg)
+
+<div class="credit">[Morris Quality Bakers](http://www.morrisqualitybakers.co.uk/goods/hovis-best-of-both-thick/)</div>
+
+--
+
 > &ldquo;PWAs combine the best of web & the best of native&rdquo; 💯
 
 --

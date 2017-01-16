@@ -3,7 +3,7 @@ output: public/index.html
 theme: peter-theme
 controls: false
 
--- bg-rocket bg-fade
+-- bg-buzz1 bg-fade
 
 # Beyond the Browser
 
@@ -15,7 +15,7 @@ controls: false
   <p>[@samsunginternet](https://twitter.com/samsunginternet)</p>
 </div>
 
-<div class="credit">[flickr.com/photos/armadillo444/](https://www.flickr.com/photos/armadillo444/2901378790)</div>
+<div class="credit">[Carlos](https://www.flickr.com/photos/armadillo444/) via [Flickr](https://www.flickr.com/photos/armadillo444/2901378790)</div>
 
 <!-- TODO include later? -->
 <!--![Samsung Internet icon on homescreen](images/samsung-internet-home.png)-->
@@ -58,54 +58,70 @@ controls: false
 
 --
 
-![Web nearing parity with native](images/web-native-parity.png)
-
-<div class="credit">[What Comes Next For The Web? - Paul Kinlan](https://www.youtube.com/watch?v=YJwrBbze_Ec)</div>
-
---
-
 ![comScore mobile web reach](images/comscore-mobile-web-crop.png)
 
---
+-- bg-best-of-both bg-fade
 
-![Hovis Best of Both](images/hovis-best-of-both.jpg)
+<div class="left">
+<h2> Best of web 🌎</h2>
+<ul>
+<li>Multi-platform</li>
+<li>Frictionless</li>
+<li>Discoverable</li>
+<li>Open</li>
+</ul>
+</div>
+
+<div class="right">
+<h2> Best of apps  📱</h2>
+<ul>
+<li>Add to Home Screen</li>
+<li>Offline & instant load</li>
+<li>Push notifications</li>
+<li>Hardware integration</li>
+</ul>
+</div>
+
+<!-- > &ldquo;PWAs combine the best of web & the best of apps&rdquo; 💯-->
 
 <div class="credit">[Morris Quality Bakers](http://www.morrisqualitybakers.co.uk/goods/hovis-best-of-both-thick/)</div>
 
 -- bg-pwas
 
+<!-- > &ldquo;PWAs are all about removing friction&rdquo; 🏎-->
 
 --
 
-> &ldquo;PWAs combine the best of web & the best of apps&rdquo; 💯
+![Web nearing parity with native](images/web-native-parity.png)
 
-<div class="caption">[Pete Le Page](https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/)</div>
+<div class="credit">[What Comes Next For The Web? - Paul Kinlan](https://www.youtube.com/watch?v=YJwrBbze_Ec)</div>
 
---
+-- bg-white
 
-## Best of web 🌎
+[![Browser representation at PWA Dev Summit](images/pwa-dev-summit.png)](https://twitter.com/nicoinch/status/745216197004754944)
 
-* Multi-platform
-* Frictionless
-* Discoverable
-* Accessible
+-- bg-buzz2 bg-fade
 
---
+## *Beyond the browser tab:*
 
-## Best of native  📱
+# Service Workers
 
-* Add to Home Screen
-* Offline
-* Instant load
-* Push notifications
+<div class="credit">[Robert Mitchem](https://www.flickr.com/photos/29290711@N04/) via [Flickr](https://www.flickr.com/photos/29290711@N04/4299610660/in/photolist-7xWCsh-4p7WUc-c9SA1-4p7WUk-eekmjY-5wYXcL-eekpus-eTmXrz-qqcft4-eeeE7k-94caDx-FrAo5-c9RX3-c9Snm-nbYsTe-e3un1X-8fAVES-8fATZy-8fAVeE-8F2Rhe-8fAX5m-8fAUPU-bu5ZkE-8fxGyK-8fxGLk-8fxEvV-8fAVQN-8fAV2f-8fAUCJ-6JP7C2-c9Tti-c9T3i-c9TkX-PePL8-c9T9A-c9TfB-c9Stj-6LpjA7-c9THy-c9S9V-c9RAT-8vgbRB-8hBKqd-8uLTaQ-c9S3P-6LpjEb-72bsgt-c9SG9-c9TAV-c9SNK)</div>
 
 --
 
-> &ldquo;PWAs are all about removing friction&rdquo; 🏎
+<video controls height="95vh">
+  <source src="videos/snapwat-offline-demo.webm"/>
+  <source src="videos/snapwat-offline-demo.mp4"/>
+</video>
 
 --
 
-# Service Workers 🚓
+<!-- Examples of service workers -->
+
+--
+
+<!-- Think of the *network as an enhancement* -->
 
 --
 
@@ -124,6 +140,13 @@ self.addEventListener('install', function(event) {
 );
 ```
 
+<!--## Rendering preferences (in order) 👇-->
+
+<!--1. SSR app shell & initial page. CSR takes over.-->
+<!--1. SSR only app shell. JS fetches rest on load.-->
+<!--1. SSR full page.-->
+<!--1. CSR full page.-->
+
 --
 
 ## 2⃣️ URLs, not files 🗂
@@ -139,35 +162,30 @@ cache.addAll( RESOURCES );
 
 --
 
-## 3⃣️ Remember to check Lighthouse 🔦🏠
+## 3⃣️ Check Lighthouse 🔦🏠
 
 <img src="images/lighthouse-report.png" alt="Lighthouse" width="80%"/>
 
 --
 
-## Rendering preferences (in order) 👇
-
-1. SSR app shell & initial page. CSR takes over.
-1. SSR only app shell. JS fetches rest on load.
-1. SSR full page.
-1. CSR full page.
+## Something about my mistake with network fallback
 
 --
 
 ## Easy caching strategies with sw-toolbox 🔧
 
+* “network first”, then fallback to cache
+
+<!-- TODO add time out -->
+
+```javascript
+toolbox.router.get('/api', toolbox.networkFirst);
+```
+
 * “cache first”, then fallback to network
 
 ```javascript
 toolbox.router.get('/images', toolbox.cacheFirst);
-```
-
---
-
-* “network first”, then fallback to cache
-
-```javascript
-toolbox.router.get('/api', toolbox.networkFirst);
 ```
 
 --
@@ -191,7 +209,19 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 --
 
-## Push notifications 🙌
+## *Beyond browser engagement*
+
+# Push notifications 🙌
+
+--
+
+<!-- About there actually being 2 separate APIs - push and notification -->
+
+--
+
+<!-- Example of push notification - -->
+
+--
 
 <img src="images/podle-push-notification.png" alt="Podle push notification" width="25%"/>
 
@@ -200,6 +230,19 @@ toolbox.router.get('/profile', toolbox.fastest);
 <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>
 
 --
+
+## *Beyond the digital*
+
+# Physical Web 
+
+--
+
+## *Beyond reality*
+
+# WebVR 👓
+
+--
+
 
 # What's next? 🆕
 

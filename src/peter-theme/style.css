@@ -233,7 +233,7 @@ a {
 
 a:hover {
   color: #987fff;
-  border-bottom: 1px solid #987fff;
+  text-decoration: underline;
 }
 
 pre {
@@ -536,10 +536,6 @@ pre .xml .cdata {
   color: #7a7a7a;
 }
 
-.credit a:hover {
-  border-bottom: 1px solid #666;
-}
-
 .corner-logos {
   position: absolute;
   bottom: 10px;
@@ -556,7 +552,7 @@ pre .xml .cdata {
   position: relative;
 }
 /* Vignette effect */
-.slide:before {
+.slide.bg-fade:before {
   content: "";
   position: fixed;
   left: 0;
@@ -582,7 +578,7 @@ pre .xml .cdata {
 }
 /* Background image to render things on top of */
 .slide.bg-fade:after {
-  filter: blur(2px) grayscale(0.5) brightness(0.25);
+  filter: blur(2px) grayscale(0.5) brightness(0.2);
 }
 .slide-content {
   z-index: 1;
@@ -602,18 +598,32 @@ pre .xml .cdata {
   margin-top: 6em;
 }
 
-.bg-rocket:after {
-  background-image: url(images/flickr_armadillo444_2901378790.jpg);
+.slide.bg-white:after {
+  background-color: #fff;
 }
 
-.bg-2017:after {
+.slide.bg-buzz1:after {
+  background-image: url(images/buzz-flickr_armadillo444.jpg);
+  filter: blur(2px) grayscale(0.5) brightness(0.175);
+}
+
+.slide.bg-buzz2:after {
+  background-image: url(images/buzz-flickr_robertmitchem.jpg);
+}
+
+.slide.bg-2017:after {
   background-image: url(images/new-years-eve-1664737_1920.jpg);
 }
 
-.bg-iphone-launch:after {
+.slide.bg-iphone-launch:after {
   background-image: url(images/Steve_Jobs_presents_iPhone.jpg);
 }
 
-.bg-pwas:after {
+.slide.bg-pwas:after {
   background-image: url(images/pwa-logo.jpg);
+}
+
+.slide.bg-best-of-both:after {
+  background-image: url(images/hovis-best-of-both.jpg);
+  filter: blur(2px) grayscale(0.5) brightness(0.125);
 }

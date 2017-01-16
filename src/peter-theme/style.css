@@ -228,7 +228,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #704dff;
+  color: #987fff;
 }
 
 a:hover {
@@ -576,6 +576,7 @@ pre .xml .cdata {
   z-index: 0;
   display: block;
   background-size: cover;
+  background-position: center center;
   width: 100%;
   height: 100%;
 }
@@ -609,6 +610,10 @@ pre .xml .cdata {
   background-image: url(images/new-years-eve-1664737_1920.jpg);
 }
 
-.bg-iphone-launch {
+.bg-iphone-launch:after {
   background-image: url(images/Steve_Jobs_presents_iPhone.jpg);
+}
+
+.bg-pwas:after {
+  background-image: url(images/pwa-logo.jpg);
 }

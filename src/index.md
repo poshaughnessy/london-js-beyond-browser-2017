@@ -72,9 +72,14 @@ controls: false
 
 <div class="credit">[Morris Quality Bakers](http://www.morrisqualitybakers.co.uk/goods/hovis-best-of-both-thick/)</div>
 
+-- bg-pwas
+
+
 --
 
-> &ldquo;PWAs combine the best of web & the best of native&rdquo; 💯
+> &ldquo;PWAs combine the best of web & the best of apps&rdquo; 💯
+
+<div class="caption">[Pete Le Page](https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/)</div>
 
 --
 

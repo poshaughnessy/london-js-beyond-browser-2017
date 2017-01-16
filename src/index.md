@@ -110,7 +110,7 @@ controls: false
 
 --
 
-<video controls height="95vh">
+<video controls height="100%">
   <source src="videos/snapwat-offline-demo.webm"/>
   <source src="videos/snapwat-offline-demo.mp4"/>
 </video>

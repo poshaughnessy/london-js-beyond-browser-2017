@@ -110,10 +110,128 @@ controls: false
 
 --
 
+```javascript
+navigator.serviceWorker.register('/service-worker.js')
+  .then(function(registration) {
+    console.log('Registration successful', registration.scope);
+  })
+  .catch(function(error) {
+    console.log('Failed - service worker not installed', error);
+  });
+```
+
+--
+
+```javascript
+// service-worker.js
+
+// NB. URLs, not filepaths!
+var RESOURCES = ['/images/logo.png', ...];
+
+self.addEventListener('install', function(event) {
+  function onInstall () {
+    return caches.open(CACHE_NAME)
+      .then(function(cache) {
+        return cache.addAll(RESOURCES);
+      });
+  }
+);
+```
+
+--
+
 <video controls height="100%">
   <source src="videos/snapwat-offline-demo.webm"/>
   <source src="videos/snapwat-offline-demo.mp4"/>
 </video>
+
+--
+
+## Don't precache too much on install
+
+```javascript
+// App shell resources
+var RESOURCES = [
+  '/js/app.js',
+  '/css/styles.css',
+  '/images/logo.png', 
+  ...
+];
+
+...
+cache.addAll(RESOURCES);
+```
+
+<!--## Rendering preferences (in order) 👇-->
+
+<!--1. SSR app shell & initial page. CSR takes over.-->
+<!--1. SSR only app shell. JS fetches rest on load.-->
+<!--1. SSR full page.-->
+<!--1. CSR full page.-->
+
+--
+
+## Check Lighthouse
+
+<img src="images/lighthouse-report.png" alt="Lighthouse" width="80%"/>
+
+--
+
+## Be wary of waiting for fetch fail
+
+```javascript
+self.addEventListener('fetch', function(event) {
+
+  var responsePromise = fetch(event.request)
+    .then(function(response) {
+      // Cache response if appropriate here...      
+      return response;
+    })
+    .catch(function(err) {
+      // Fetch failed - maybe after a while!
+      return caches.match(event.request);
+    });
+
+  event.respondWith(responsePromise);
+});
+```
+
+--
+
+## sw-toolbox
+
+* “network first”, then fallback to cache
+
+<!-- TODO add time out -->
+
+```javascript
+toolbox.router.get('/api', toolbox.networkFirst);
+```
+
+* “cache first”, then fallback to network
+
+```javascript
+toolbox.router.get('/images', toolbox.cacheFirst);
+```
+
+--
+
+* “fastest” — serve whichever comes back first
+
+```javascript
+toolbox.router.get('/profile', toolbox.fastest);
+```
+<div></div>
+* “network only”
+* “cache only”
+
+--
+
+## &lt;a download&gt; requests bypass SW
+
+<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a>
+
+<!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>-->
 
 -- img-with-caption
 
@@ -148,87 +266,13 @@ controls: false
 
 --
 
-## Don't cache too much on install
+![Twitter service worker](images/twitter-sw.png)
 
-```javascript
-var RESOURCES = ['/images/emojione/1f600.svg', ...];
+-- img-with-caption
 
-self.addEventListener('install', function(event) {
-  function onInstall () {
-    return caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(RESOURCES);
-      });
-  }
-);
-```
+[![Inspire Hub](images/inspirehub.jpg)](https://inspirehub.ihubapp.org/stories/41314)
 
-<!--## Rendering preferences (in order) 👇-->
-
-<!--1. SSR app shell & initial page. CSR takes over.-->
-<!--1. SSR only app shell. JS fetches rest on load.-->
-<!--1. SSR full page.-->
-<!--1. CSR full page.-->
-
---
-
-## URLs, not files
-
-```javascript
-const RESOURCES = [
-  '/',
-  ...
-];
-...
-cache.addAll( RESOURCES );
-```
-
---
-
-## Check Lighthouse
-
-<img src="images/lighthouse-report.png" alt="Lighthouse" width="80%"/>
-
---
-
-## Something about my mistake with network fallback
-
---
-
-## Easy caching strategies with sw-toolbox
-
-* “network first”, then fallback to cache
-
-<!-- TODO add time out -->
-
-```javascript
-toolbox.router.get('/api', toolbox.networkFirst);
-```
-
-* “cache first”, then fallback to network
-
-```javascript
-toolbox.router.get('/images', toolbox.cacheFirst);
-```
-
---
-
-* “fastest” — serve whichever comes back first
-
-```javascript
-toolbox.router.get('/profile', toolbox.fastest);
-```
-<div></div>
-* “network only”
-* “cache only”
-
---
-
-## &lt;a download&gt; requests bypass SW
-
-<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a>
-
-<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>
+<div class="caption">[&ldquo;PWA Technology helped my community following a natural disaster&rdquo; - InspireHub](https://inspirehub.ihubapp.org/stories/41314)</div>
 
 -- bg-buzz3 bg-fade beyond
 
@@ -238,21 +282,22 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <div class="credit">[Brandon Serna](https://www.flickr.com/photos/54732806@N03/) via [Flickr](https://www.flickr.com/photos/54732806@N03/5378370232/)</div>
 
---
+<!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>-->
 
-<!-- Example of push notification - -->
-
---
-
-<!-- About there actually being 2 separate APIs - push and notification -->
-
---
+-- img-with-caption
 
 <img src="images/podle-push-notification.png" alt="Podle push notification" width="25%"/>
 
+<div class="caption">[podle.audio](https://podle.audio)</div>
+
 <!-- [bit.ly/web-fundamentals-push-notifications](http://bit.ly/web-fundamentals-push-notifications) -->
 
-<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>
+
+-- img-with-caption
+
+![Guardian live election web push notifications](images/guardian-push-notifications.jpg)
+
+<div class="caption">[&ldquo;Building the Guardian’s Live Elections Notifications&rdquo;](https://medium.com/the-guardian-mobile-innovation-lab/building-the-guardians-live-elections-notifications-87bafbcf510)</div>
 
 -- bg-buzz4 bg-fade beyond
 
@@ -261,6 +306,8 @@ toolbox.router.get('/profile', toolbox.fastest);
 # Physical Web
 
 <div class="credit">[Rafael Romero](https://www.flickr.com/photos/35663018@N03/) via [Flickr](https://www.flickr.com/photos/35663018@N03/3952278050/)</div>
+
+<!-- <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet beta](images/sbrowser5.2-beta.png) ![Firefox](images/firefox.png)</div> -->
 
 -- bg-buzz5 bg-fade beyond
 

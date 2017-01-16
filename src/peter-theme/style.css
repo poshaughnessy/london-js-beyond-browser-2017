@@ -442,6 +442,10 @@ pre .xml .cdata {
   color: #673280;
 }
 
+.hljs-comment {
+  color: #777;
+}
+
 /* Media Queries */
 /* 640 x 480 is the default (1em) */
 
@@ -538,7 +542,7 @@ pre .xml .cdata {
 
 .corner-logos {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   right: 10px;
 }
 

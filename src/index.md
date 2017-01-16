@@ -100,10 +100,10 @@ controls: false
 
 [![Browser representation at PWA Dev Summit](images/pwa-dev-summit.png)](https://twitter.com/nicoinch/status/745216197004754944)
 
--- bg-buzz2 bg-fade
+-- bg-buzz2 bg-fade beyond
 
-## *Beyond the browser tab:*
-
+## Beyond the browser tab
+#### with
 # Service Workers
 
 <div class="credit">[Robert Mitchem](https://www.flickr.com/photos/29290711@N04/) via [Flickr](https://www.flickr.com/photos/29290711@N04/4299610660/in/photolist-7xWCsh-4p7WUc-c9SA1-4p7WUk-eekmjY-5wYXcL-eekpus-eTmXrz-qqcft4-eeeE7k-94caDx-FrAo5-c9RX3-c9Snm-nbYsTe-e3un1X-8fAVES-8fATZy-8fAVeE-8F2Rhe-8fAX5m-8fAUPU-bu5ZkE-8fxGyK-8fxGLk-8fxEvV-8fAVQN-8fAV2f-8fAUCJ-6JP7C2-c9Tti-c9T3i-c9TkX-PePL8-c9T9A-c9TfB-c9Stj-6LpjA7-c9THy-c9S9V-c9RAT-8vgbRB-8hBKqd-8uLTaQ-c9S3P-6LpjEb-72bsgt-c9SG9-c9TAV-c9SNK)</div>
@@ -115,17 +115,40 @@ controls: false
   <source src="videos/snapwat-offline-demo.mp4"/>
 </video>
 
+-- img-with-caption
+
+[![isserviceworkerready](images/isserviceworkerready.png)](https://jakearchibald.github.io/isserviceworkerready/)
+
+<div class="caption">[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)</div>
+
+-- bg-safari bg-fade
+
+# What about Safari?
+
+-- bg-offline bg-fade
+
+# Think of the network as 
+# an *enhancement*
+
 --
 
-<!-- Examples of service workers -->
+![Chrome service worker internals](images/chrome-service-worker-internals.png)
+
+-- img-with-caption
+
+[![pwa.rocks](images/pwa-rocks.png)](https://pwa.rocks)
+
+<div class="caption">[pwa.rocks](https://pwa.rocks)</div>
+
+-- img-with-caption
+
+[![outweb.io](images/outweb.png)](https://outweb.io)
+
+<div class="caption">[outweb.io](https://outweb.io)</div>
 
 --
 
-<!-- Think of the *network as an enhancement* -->
-
---
-
-## 1⃣️ Don't cache too much on install! ⚖
+## Don't cache too much on install
 
 ```javascript
 var RESOURCES = ['/images/emojione/1f600.svg', ...];
@@ -149,7 +172,7 @@ self.addEventListener('install', function(event) {
 
 --
 
-## 2⃣️ URLs, not files 🗂
+## URLs, not files
 
 ```javascript
 const RESOURCES = [
@@ -162,7 +185,7 @@ cache.addAll( RESOURCES );
 
 --
 
-## 3⃣️ Check Lighthouse 🔦🏠
+## Check Lighthouse
 
 <img src="images/lighthouse-report.png" alt="Lighthouse" width="80%"/>
 
@@ -172,7 +195,7 @@ cache.addAll( RESOURCES );
 
 --
 
-## Easy caching strategies with sw-toolbox 🔧
+## Easy caching strategies with sw-toolbox
 
 * “network first”, then fallback to cache
 
@@ -201,17 +224,17 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 --
 
-## 3⃣️ &lt;a download&gt; requests bypass SW 🙉
+## &lt;a download&gt; requests bypass SW
 
 <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a>
 
 <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>
 
--- bg-buzz3 bg-fade
+-- bg-buzz3 bg-fade beyond
 
-## *Beyond browser engagement*
-
-# Push notifications 🙌
+## Beyond browser engagement
+#### with
+# Push Notifications
 
 <div class="credit">[Brandon Serna](https://www.flickr.com/photos/54732806@N03/) via [Flickr](https://www.flickr.com/photos/54732806@N03/5378370232/)</div>
 
@@ -231,25 +254,27 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>
 
--- bg-buzz4 bg-fade
+-- bg-buzz4 bg-fade beyond
 
-## *Beyond the digital*
-
-# Physical Web 
+## Beyond the digital world
+#### with
+# Physical Web
 
 <div class="credit">[Rafael Romero](https://www.flickr.com/photos/35663018@N03/) via [Flickr](https://www.flickr.com/photos/35663018@N03/3952278050/)</div>
 
--- bg-buzz5 bg-fade
+-- bg-buzz5 bg-fade beyond
 
-## *Beyond reality*
-
-# WebVR 👓
+## Beyond reality
+#### with
+# WebVR
 
 <div class="credit">[Kevin Harber](https://www.flickr.com/photos/kevharb/) via [Flickr](https://www.flickr.com/photos/kevharb/3065077415/)</div>
---
 
+-- bg-fade beyond
 
-# What's next? 🆕
+## Beyond today
+#### with
+# What's next 🆕
 
 --
 
@@ -278,15 +303,9 @@ Origin-Trial: token_obtained_from_signup
 
 <div class="corner-logos">![Chrome](images/chrome.png)</div>
 
---
-
-## 🔗 [snapw.at](https://snapw.at)
-
-## 📃  [github.com/SamsungInternet/snapwat](https://github.com/SamsungInternet/snapwat)
-
 -- bg-buzz6 bg-fade
 
-<!-- Beyond - wrap up -->
+# Beyond the *Browser*
 
 <div class="credit">[payayita](https://www.flickr.com/photos/payayita/) via [Flickr](https://www.flickr.com/photos/payayita/1129150332/)</div>
 
@@ -294,12 +313,8 @@ Origin-Trial: token_obtained_from_signup
 
 # Thanks! 🙏
 
-<div class="contact">
-  <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
-  <p>[@samsunginternet](https://twitter.com/samsunginternet)</p>
-  <br/>
-  <p>[github.com/samsunginternet](https://github.com/samsunginternet)</p>
-  <p>[medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev)</p>
-</div>
+## [@poshaughnessy](https://twitter.com/poshaughnessy)
+
+## [@samsunginternet](https://twitter.com/samsunginternet)
 
 <div class="credit">[Bridgette Wynn](https://www.flickr.com/photos/brwynn/) via [Flickr](https://www.flickr.com/photos/brwynn/4870133844/in/photolist-8qmH7U-a27zM3-7h1ntQ-FMpJ5V-8pVgfS-6fQV4k-8offGv-dLmtz1-cfnyyj-9pUG6t-7Q6mc8-dz82Ks-8AQuwa-95Zimm-8rDw4L-8AVpKL-9dhs6t-6FsRjV-8rDyvs-9qam69-8dBd7t-6FsRj6-92qxGP-4nkESf-8A1fhL-98ZQP6-bWpBQ8-95WfNF-6FwY8w-b7JpX2-ybecj-95WfRH-8efWsX-bRjj8e-9nesie-6FwY6N-oNMUh-a7CFuW-8AUEyj-qhHEZy-9cGQP9-qhGZcf-ortUC5-8C5CKb-7SynPk-8rDus3-95w2dP-8wsvSY-fFat1y-8KRKhJ)</div>

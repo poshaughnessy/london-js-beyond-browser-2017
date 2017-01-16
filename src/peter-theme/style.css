@@ -47,7 +47,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: #333;
+  background-color: #222;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -616,11 +616,11 @@ pre .xml .cdata {
 }
 
 .slide.bg-buzz4:after {
-  background-image: url(images/buzz-flickr_kevinharber.jpg);
+  background-image: url(images/buzz-flickr_rafaelromero.jpg);
 }
 
 .slide.bg-buzz5:after {
-  background-image: url(images/buzz-flickr_rafaelromero.jpg);
+  background-image: url(images/buzz-flickr_kevinharber.jpg);
 }
 
 .slide.bg-buzz6:after {
@@ -643,7 +643,40 @@ pre .xml .cdata {
   background-image: url(images/pwa-logo.jpg);
 }
 
+.slide.bg-pwarocks {
+  background-color: #222;
+}
+
+.slide.bg-outweb {
+  background-color: #fafafa;
+}
+
 .slide.bg-best-of-both:after {
   background-image: url(images/hovis-best-of-both.jpg);
   filter: blur(2px) grayscale(0.5) brightness(0.125);
+}
+
+.slide.bg-safari:after {
+  background-image: url(images/safari-flickr_triciahealey.jpg);
+}
+
+.slide.bg-offline:after {
+  background-image: url(images/ethernet-flickr_wikidave.jpg);
+}
+
+.beyond h2 {
+  color: #987fff;
+}
+
+.beyond h2 + h4 {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.img-with-caption p {
+  margin: 0;
+}
+
+.img-with-caption img {
+  max-height: calc(100vh - 4em);
 }

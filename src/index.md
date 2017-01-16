@@ -100,6 +100,56 @@ controls: false
 
 [![Browser representation at PWA Dev Summit](images/pwa-dev-summit.png)](https://twitter.com/nicoinch/status/745216197004754944)
 
+-- img-with-caption
+
+[![isserviceworkerready](images/isserviceworkerready.png)](https://jakearchibald.github.io/isserviceworkerready/)
+
+<div class="caption">[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)</div>
+
+-- bg-safari bg-fade
+
+# What about Safari?
+
+-- bg-offline bg-fade
+
+# Think of the network as 
+# an *enhancement*
+
+--
+
+![Chrome service worker internals](images/chrome-service-worker-internals.png)
+
+-- img-with-caption
+
+[![pwa.rocks](images/pwa-rocks.png)](https://pwa.rocks)
+
+<div class="caption">[pwa.rocks](https://pwa.rocks)</div>
+
+-- img-with-caption
+
+[![outweb.io](images/outweb.png)](https://outweb.io)
+
+<div class="caption">[outweb.io](https://outweb.io)</div>
+
+--
+
+![Twitter service worker](images/twitter-sw.png)
+
+-- img-with-caption
+
+[![Inspire Hub](images/inspirehub.jpg)](https://inspirehub.ihubapp.org/stories/41314)
+
+<div class="caption">[&ldquo;PWA Technology helped my community following a natural disaster&rdquo; - InspireHub](https://inspirehub.ihubapp.org/stories/41314)</div>
+
+--
+
+<video controls width="80%">
+  <source src="videos/snapwat-offline-demo.webm"/>
+  <source src="videos/snapwat-offline-demo.mp4"/>
+</video>
+
+<div class="caption">[https://snapw.at](snapw.at)</div>
+
 -- bg-buzz2 bg-fade beyond
 
 ## Beyond the browser tab
@@ -140,10 +190,23 @@ self.addEventListener('install', function(event) {
 
 --
 
-<video controls height="100%">
-  <source src="videos/snapwat-offline-demo.webm"/>
-  <source src="videos/snapwat-offline-demo.mp4"/>
-</video>
+```javascript
+self.addEventListener('install', function(event) {
+  // Installed. Waits for clients using old SWs to be closed 
+  // and/or `event.waitUntil()`. Unless `skipWaiting()`.
+});
+
+self.addEventListener('activate', function(event) {
+  // Activated. Good time to clear out old caches.
+});
+
+self.addEventListener('fetch', function(event) {
+  // Intercepted a fetch!
+  event.respondWith(new Response('Hello world!'));
+});
+```
+
+<div class="caption">[Using Service Workers - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)</div>
 
 --
 
@@ -202,16 +265,20 @@ self.addEventListener('fetch', function(event) {
 
 * “network first”, then fallback to cache
 
-<!-- TODO add time out -->
-
 ```javascript
-toolbox.router.get('/api', toolbox.networkFirst);
+importScripts('/sw-toolbox/sw-toolbox.js');
+
+toolbox.router.get('/images/*', toolbox.networkFirst, {
+	networkTimeoutSeconds: 10
+});
 ```
+
+--
 
 * “cache first”, then fallback to network
 
 ```javascript
-toolbox.router.get('/images', toolbox.cacheFirst);
+toolbox.router.get('/images/*', toolbox.cacheFirst);
 ```
 
 --
@@ -233,47 +300,6 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>-->
 
--- img-with-caption
-
-[![isserviceworkerready](images/isserviceworkerready.png)](https://jakearchibald.github.io/isserviceworkerready/)
-
-<div class="caption">[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)</div>
-
--- bg-safari bg-fade
-
-# What about Safari?
-
--- bg-offline bg-fade
-
-# Think of the network as 
-# an *enhancement*
-
---
-
-![Chrome service worker internals](images/chrome-service-worker-internals.png)
-
--- img-with-caption
-
-[![pwa.rocks](images/pwa-rocks.png)](https://pwa.rocks)
-
-<div class="caption">[pwa.rocks](https://pwa.rocks)</div>
-
--- img-with-caption
-
-[![outweb.io](images/outweb.png)](https://outweb.io)
-
-<div class="caption">[outweb.io](https://outweb.io)</div>
-
---
-
-![Twitter service worker](images/twitter-sw.png)
-
--- img-with-caption
-
-[![Inspire Hub](images/inspirehub.jpg)](https://inspirehub.ihubapp.org/stories/41314)
-
-<div class="caption">[&ldquo;PWA Technology helped my community following a natural disaster&rdquo; - InspireHub](https://inspirehub.ihubapp.org/stories/41314)</div>
-
 -- bg-buzz3 bg-fade beyond
 
 ## Beyond browser engagement
@@ -286,18 +312,25 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 -- img-with-caption
 
-<img src="images/podle-push-notification.png" alt="Podle push notification" width="25%"/>
+![Guardian live election web push notifications](images/guardian-push-notifications.jpg)
+
+<div class="caption">[&ldquo;Building the Guardian’s Live Elections Notifications&rdquo;](https://medium.com/the-guardian-mobile-innovation-lab/building-the-guardians-live-elections-notifications-87bafbcf510)</div>
+
+-- img-with-caption
+
+![Podle push notification](images/podle-push-notification.png)
 
 <div class="caption">[podle.audio](https://podle.audio)</div>
 
 <!-- [bit.ly/web-fundamentals-push-notifications](http://bit.ly/web-fundamentals-push-notifications) -->
 
+--
 
--- img-with-caption
+![Podle push debugging](images/podle-push-debug.png)
 
-![Guardian live election web push notifications](images/guardian-push-notifications.jpg)
+--
 
-<div class="caption">[&ldquo;Building the Guardian’s Live Elections Notifications&rdquo;](https://medium.com/the-guardian-mobile-innovation-lab/building-the-guardians-live-elections-notifications-87bafbcf510)</div>
+![Podle push debugging](images/podle-push-debug2.png)
 
 -- bg-buzz4 bg-fade beyond
 

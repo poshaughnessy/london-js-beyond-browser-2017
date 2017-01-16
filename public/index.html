@@ -675,7 +675,8 @@ pre .xml .cdata {
   background-image: url(images/ethernet-flickr_wikidave.jpg);
 }
 
-.beyond h2 {
+.beyond h2,
+.purple-headers h2 {
   color: #987fff;
 }
 
@@ -781,13 +782,54 @@ pre .xml .cdata {
     <section class="slide-content"><p><a href="https://twitter.com/nicoinch/status/745216197004754944"><img src="images/pwa-dev-summit.png" alt="Browser representation at PWA Dev Summit"></a></p>
 </section>
   </div>
-  <div class="slide hidden  bg-buzz2 bg-fade beyond" id="slide-14">
+  <div class="slide hidden  img-with-caption" id="slide-14">
+    <section class="slide-content"><p><a href="https://jakearchibald.github.io/isserviceworkerready/"><img src="images/isserviceworkerready.png" alt="isserviceworkerready"></a></p>
+<div class="caption"><a href="https://jakearchibald.github.io/isserviceworkerready/">jakearchibald.github.io/isserviceworkerready/</a></div></section>
+  </div>
+  <div class="slide hidden  bg-safari bg-fade" id="slide-15">
+    <section class="slide-content"><h1 id="what-about-safari-">What about Safari?</h1>
+</section>
+  </div>
+  <div class="slide hidden  bg-offline bg-fade" id="slide-16">
+    <section class="slide-content"><h1 id="think-of-the-network-as">Think of the network as</h1>
+<h1 id="an-enhancement-">an <em>enhancement</em></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><p><img src="images/chrome-service-worker-internals.png" alt="Chrome service worker internals"></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-18">
+    <section class="slide-content"><p><a href="https://pwa.rocks"><img src="images/pwa-rocks.png" alt="pwa.rocks"></a></p>
+<div class="caption"><a href="https://pwa.rocks">pwa.rocks</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-19">
+    <section class="slide-content"><p><a href="https://outweb.io"><img src="images/outweb.png" alt="outweb.io"></a></p>
+<div class="caption"><a href="https://outweb.io">outweb.io</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-20">
+    <section class="slide-content"><p><img src="images/twitter-sw.png" alt="Twitter service worker"></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-21">
+    <section class="slide-content"><p><a href="https://inspirehub.ihubapp.org/stories/41314"><img src="images/inspirehub.jpg" alt="Inspire Hub"></a></p>
+<div class="caption"><a href="https://inspirehub.ihubapp.org/stories/41314">&ldquo;PWA Technology helped my community following a natural disaster&rdquo; - InspireHub</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><video controls width="80%">
+  <source src="videos/snapwat-offline-demo.webm"/>
+  <source src="videos/snapwat-offline-demo.mp4"/>
+</video>
+
+<div class="caption"><a href="snapw.at"><a href="https://snapw.at">https://snapw.at</a></a></div></section>
+  </div>
+  <div class="slide hidden  bg-buzz2 bg-fade beyond" id="slide-23">
     <section class="slide-content"><h2 id="beyond-the-browser-tab">Beyond the browser tab</h2>
 <h4 id="with">with</h4>
 <h1 id="service-workers">Service Workers</h1>
 <div class="credit"><a href="https://www.flickr.com/photos/29290711@N04/">Robert Mitchem</a> via <a href="https://www.flickr.com/photos/29290711@N04/4299610660/in/photolist-7xWCsh-4p7WUc-c9SA1-4p7WUk-eekmjY-5wYXcL-eekpus-eTmXrz-qqcft4-eeeE7k-94caDx-FrAo5-c9RX3-c9Snm-nbYsTe-e3un1X-8fAVES-8fATZy-8fAVeE-8F2Rhe-8fAX5m-8fAUPU-bu5ZkE-8fxGyK-8fxGLk-8fxEvV-8fAVQN-8fAV2f-8fAUCJ-6JP7C2-c9Tti-c9T3i-c9TkX-PePL8-c9T9A-c9TfB-c9Stj-6LpjA7-c9THy-c9S9V-c9RAT-8vgbRB-8hBKqd-8uLTaQ-c9S3P-6LpjEb-72bsgt-c9SG9-c9TAV-c9SNK">Flickr</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden" id="slide-24">
     <section class="slide-content"><pre><code class="lang-javascript">navigator.serviceWorker.register(<span class="hljs-string">'/service-worker.js'</span>)
   .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">registration</span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Registration successful'</span>, registration.scope);
@@ -797,7 +839,7 @@ pre .xml .cdata {
   });</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// service-worker.js</span>
 
 <span class="hljs-comment">// NB. URLs, not filepaths!</span>
@@ -813,13 +855,23 @@ self.addEventListener(<span class="hljs-string">'install'</span>, <span class="h
 );</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
-    <section class="slide-content"><video controls height="100%">
-  <source src="videos/snapwat-offline-demo.webm"/>
-  <source src="videos/snapwat-offline-demo.mp4"/>
-</video></section>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><pre><code class="lang-javascript">self.addEventListener(<span class="hljs-string">'install'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-comment">// Installed. Waits for clients using old SWs to be closed </span>
+  <span class="hljs-comment">// and/or `event.waitUntil()`. Unless `skipWaiting()`.</span>
+});
+
+self.addEventListener(<span class="hljs-string">'activate'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-comment">// Activated. Good time to clear out old caches.</span>
+});
+
+self.addEventListener(<span class="hljs-string">'fetch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-comment">// Intercepted a fetch!</span>
+  event.respondWith(<span class="hljs-keyword">new</span> Response(<span class="hljs-string">'Hello world!'</span>));
+});</code></pre>
+<div class="caption"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers">Using Service Workers - MDN</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden" id="slide-27">
     <section class="slide-content"><h2 id="don-t-precache-too-much-on-install">Don&#39;t precache too much on install</h2>
 <pre><code class="lang-javascript"><span class="hljs-comment">// App shell resources</span>
 <span class="hljs-keyword">var</span> RESOURCES = [
@@ -838,12 +890,12 @@ cache.addAll(RESOURCES);</code></pre>
 <!--1. SSR full page.-->
 <!--1. CSR full page.--></section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><h2 id="check-lighthouse">Check Lighthouse</h2>
 <p><img src="images/lighthouse-report.png" alt="Lighthouse" width="80%"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-20">
+  <div class="slide hidden" id="slide-29">
     <section class="slide-content"><h2 id="be-wary-of-waiting-for-fetch-fail">Be wary of waiting for fetch fail</h2>
 <pre><code class="lang-javascript">self.addEventListener(<span class="hljs-string">'fetch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
 
@@ -861,21 +913,26 @@ cache.addAll(RESOURCES);</code></pre>
 });</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-21">
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><h2 id="sw-toolbox">sw-toolbox</h2>
 <ul>
 <li>“network first”, then fallback to cache</li>
 </ul>
-<!-- TODO add time out -->
+<pre><code class="lang-javascript">importScripts(<span class="hljs-string">'/sw-toolbox/sw-toolbox.js'</span>);
 
-<pre><code class="lang-javascript">toolbox.router.get(<span class="hljs-string">'/api'</span>, toolbox.networkFirst);</code></pre>
-<ul>
-<li>“cache first”, then fallback to network</li>
-</ul>
-<pre><code class="lang-javascript">toolbox.router.get(<span class="hljs-string">'/images'</span>, toolbox.cacheFirst);</code></pre>
+toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.networkFirst, {
+    networkTimeoutSeconds: <span class="hljs-number">10</span>
+});</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-22">
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><ul>
+<li>“cache first”, then fallback to network</li>
+</ul>
+<pre><code class="lang-javascript">toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.cacheFirst);</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-32">
     <section class="slide-content"><ul>
 <li>“fastest” — serve whichever comes back first</li>
 </ul>
@@ -887,45 +944,12 @@ cache.addAll(RESOURCES);</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-23">
+  <div class="slide hidden" id="slide-33">
     <section class="slide-content"><h2 id="-lt-a-download-gt-requests-bypass-sw">&lt;a download&gt; requests bypass SW</h2>
 <p><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a></p>
 <!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>--></section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-24">
-    <section class="slide-content"><p><a href="https://jakearchibald.github.io/isserviceworkerready/"><img src="images/isserviceworkerready.png" alt="isserviceworkerready"></a></p>
-<div class="caption"><a href="https://jakearchibald.github.io/isserviceworkerready/">jakearchibald.github.io/isserviceworkerready/</a></div></section>
-  </div>
-  <div class="slide hidden  bg-safari bg-fade" id="slide-25">
-    <section class="slide-content"><h1 id="what-about-safari-">What about Safari?</h1>
-</section>
-  </div>
-  <div class="slide hidden  bg-offline bg-fade" id="slide-26">
-    <section class="slide-content"><h1 id="think-of-the-network-as">Think of the network as</h1>
-<h1 id="an-enhancement-">an <em>enhancement</em></h1>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-27">
-    <section class="slide-content"><p><img src="images/chrome-service-worker-internals.png" alt="Chrome service worker internals"></p>
-</section>
-  </div>
-  <div class="slide hidden  img-with-caption" id="slide-28">
-    <section class="slide-content"><p><a href="https://pwa.rocks"><img src="images/pwa-rocks.png" alt="pwa.rocks"></a></p>
-<div class="caption"><a href="https://pwa.rocks">pwa.rocks</a></div></section>
-  </div>
-  <div class="slide hidden  img-with-caption" id="slide-29">
-    <section class="slide-content"><p><a href="https://outweb.io"><img src="images/outweb.png" alt="outweb.io"></a></p>
-<div class="caption"><a href="https://outweb.io">outweb.io</a></div></section>
-  </div>
-  <div class="slide hidden" id="slide-30">
-    <section class="slide-content"><p><img src="images/twitter-sw.png" alt="Twitter service worker"></p>
-</section>
-  </div>
-  <div class="slide hidden  img-with-caption" id="slide-31">
-    <section class="slide-content"><p><a href="https://inspirehub.ihubapp.org/stories/41314"><img src="images/inspirehub.jpg" alt="Inspire Hub"></a></p>
-<div class="caption"><a href="https://inspirehub.ihubapp.org/stories/41314">&ldquo;PWA Technology helped my community following a natural disaster&rdquo; - InspireHub</a></div></section>
-  </div>
-  <div class="slide hidden  bg-buzz3 bg-fade beyond" id="slide-32">
+  <div class="slide hidden  bg-buzz3 bg-fade beyond" id="slide-34">
     <section class="slide-content"><h2 id="beyond-browser-engagement">Beyond browser engagement</h2>
 <h4 id="with">with</h4>
 <h1 id="push-notifications">Push Notifications</h1>
@@ -933,17 +957,25 @@ cache.addAll(RESOURCES);</code></pre>
 
 <!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>--></section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-33">
-    <section class="slide-content"><p><img src="images/podle-push-notification.png" alt="Podle push notification" width="25%"/></p>
+  <div class="slide hidden  img-with-caption" id="slide-35">
+    <section class="slide-content"><p><img src="images/guardian-push-notifications.jpg" alt="Guardian live election web push notifications"></p>
+<div class="caption"><a href="https://medium.com/the-guardian-mobile-innovation-lab/building-the-guardians-live-elections-notifications-87bafbcf510">&ldquo;Building the Guardian’s Live Elections Notifications&rdquo;</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-36">
+    <section class="slide-content"><p><img src="images/podle-push-notification.png" alt="Podle push notification"></p>
 <div class="caption"><a href="https://podle.audio">podle.audio</a></div>
 
 <!-- [bit.ly/web-fundamentals-push-notifications](http://bit.ly/web-fundamentals-push-notifications) --></section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-34">
-    <section class="slide-content"><p><img src="images/guardian-push-notifications.jpg" alt="Guardian live election web push notifications"></p>
-<div class="caption"><a href="https://medium.com/the-guardian-mobile-innovation-lab/building-the-guardians-live-elections-notifications-87bafbcf510">&ldquo;Building the Guardian’s Live Elections Notifications&rdquo;</a></div></section>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><p><img src="images/podle-push-debug.png" alt="Podle push debugging"></p>
+</section>
   </div>
-  <div class="slide hidden  bg-buzz4 bg-fade beyond" id="slide-35">
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><p><img src="images/podle-push-debug2.png" alt="Podle push debugging"></p>
+</section>
+  </div>
+  <div class="slide hidden  bg-buzz4 bg-fade beyond" id="slide-39">
     <section class="slide-content"><h2 id="beyond-the-digital-world">Beyond the digital world</h2>
 <h4 id="with">with</h4>
 <h1 id="physical-web">Physical Web</h1>
@@ -951,19 +983,19 @@ cache.addAll(RESOURCES);</code></pre>
 
 <!-- <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet beta](images/sbrowser5.2-beta.png) ![Firefox](images/firefox.png)</div> --></section>
   </div>
-  <div class="slide hidden  bg-buzz5 bg-fade beyond" id="slide-36">
+  <div class="slide hidden  bg-buzz5 bg-fade beyond" id="slide-40">
     <section class="slide-content"><h2 id="beyond-reality">Beyond reality</h2>
 <h4 id="with">with</h4>
 <h1 id="webvr">WebVR</h1>
 <div class="credit"><a href="https://www.flickr.com/photos/kevharb/">Kevin Harber</a> via <a href="https://www.flickr.com/photos/kevharb/3065077415/">Flickr</a></div></section>
   </div>
-  <div class="slide hidden  bg-fade beyond" id="slide-37">
+  <div class="slide hidden  bg-fade beyond" id="slide-41">
     <section class="slide-content"><h2 id="beyond-today">Beyond today</h2>
 <h4 id="with">with</h4>
 <h1 id="what-s-next-">What&#39;s next 🆕</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-38">
+  <div class="slide hidden" id="slide-42">
     <section class="slide-content"><h2 id="background-sync-">Background sync ⛰</h2>
 <pre><code class="lang-javascript">navigator.serviceWorker.ready.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reg</span>) </span>{
     <span class="hljs-keyword">return</span> reg.sync.register(<span class="hljs-string">'syncTest'</span>);
@@ -972,18 +1004,18 @@ cache.addAll(RESOURCES);</code></pre>
   });</code></pre>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden" id="slide-39">
+  <div class="slide hidden" id="slide-43">
     <section class="slide-content"><h2 id="foreign-fetch-">Foreign fetch ✈️</h2>
 <pre><code>Link: &lt;/service-worker.js&gt;; rel=&quot;serviceworker&quot;
 Origin-Trial: token_obtained_from_signup</code></pre>
 <p><a href="http://bit.ly/foreign-fetch">bit.ly/foreign-fetch</a></p>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden  bg-buzz6 bg-fade" id="slide-40">
+  <div class="slide hidden  bg-buzz6 bg-fade" id="slide-44">
     <section class="slide-content"><h1 id="beyond-the-browser-">Beyond the <em>Browser</em></h1>
 <div class="credit"><a href="https://www.flickr.com/photos/payayita/">payayita</a> via <a href="https://www.flickr.com/photos/payayita/1129150332/">Flickr</a></div></section>
   </div>
-  <div class="slide hidden  bg-buzz-bye bg-fade" id="slide-41">
+  <div class="slide hidden  bg-buzz-bye bg-fade" id="slide-45">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <h2 id="-poshaughnessy-https-twitter-com-poshaughnessy-"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h2>
 <h2 id="-samsunginternet-https-twitter-com-samsunginternet-"><a href="https://twitter.com/samsunginternet">@samsunginternet</a></h2>

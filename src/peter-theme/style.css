@@ -668,7 +668,8 @@ pre .xml .cdata {
   background-image: url(images/ethernet-flickr_wikidave.jpg);
 }
 
-.beyond h2 {
+.beyond h2,
+.purple-headers h2 {
   color: #987fff;
 }
 

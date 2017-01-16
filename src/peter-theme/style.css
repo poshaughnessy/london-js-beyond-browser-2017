@@ -611,6 +611,26 @@ pre .xml .cdata {
   background-image: url(images/buzz-flickr_robertmitchem.jpg);
 }
 
+.slide.bg-buzz3:after {
+  background-image: url(images/buzz-flickr_brandonserna.jpg);
+}
+
+.slide.bg-buzz4:after {
+  background-image: url(images/buzz-flickr_kevinharber.jpg);
+}
+
+.slide.bg-buzz5:after {
+  background-image: url(images/buzz-flickr_rafaelromero.jpg);
+}
+
+.slide.bg-buzz6:after {
+  background-image: url(images/buzz-flickr_payayita.jpg);
+}
+
+.slide.bg-buzz-bye:after {
+  background-image: url(images/buzz-flickr_bridgettewynn.jpg);
+}
+
 .slide.bg-2017:after {
   background-image: url(images/new-years-eve-1664737_1920.jpg);
 }

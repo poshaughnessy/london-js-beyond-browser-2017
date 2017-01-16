@@ -207,19 +207,21 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>
 
---
+-- bg-buzz3 bg-fade
 
 ## *Beyond browser engagement*
 
 # Push notifications 🙌
 
---
-
-<!-- About there actually being 2 separate APIs - push and notification -->
+<div class="credit">[Brandon Serna](https://www.flickr.com/photos/54732806@N03/) via [Flickr](https://www.flickr.com/photos/54732806@N03/5378370232/)</div>
 
 --
 
 <!-- Example of push notification - -->
+
+--
+
+<!-- About there actually being 2 separate APIs - push and notification -->
 
 --
 
@@ -229,18 +231,21 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>
 
---
+-- bg-buzz4 bg-fade
 
 ## *Beyond the digital*
 
 # Physical Web 
 
---
+<div class="credit">[Rafael Romero](https://www.flickr.com/photos/35663018@N03/) via [Flickr](https://www.flickr.com/photos/35663018@N03/3952278050/)</div>
+
+-- bg-buzz5 bg-fade
 
 ## *Beyond reality*
 
 # WebVR 👓
 
+<div class="credit">[Kevin Harber](https://www.flickr.com/photos/kevharb/) via [Flickr](https://www.flickr.com/photos/kevharb/3065077415/)</div>
 --
 
 
@@ -279,7 +284,13 @@ Origin-Trial: token_obtained_from_signup
 
 ## 📃  [github.com/SamsungInternet/snapwat](https://github.com/SamsungInternet/snapwat)
 
---
+-- bg-buzz6 bg-fade
+
+<!-- Beyond - wrap up -->
+
+<div class="credit">[payayita](https://www.flickr.com/photos/payayita/) via [Flickr](https://www.flickr.com/photos/payayita/1129150332/)</div>
+
+-- bg-buzz-bye bg-fade
 
 # Thanks! 🙏
 
@@ -290,3 +301,5 @@ Origin-Trial: token_obtained_from_signup
   <p>[github.com/samsunginternet](https://github.com/samsunginternet)</p>
   <p>[medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev)</p>
 </div>
+
+<div class="credit">[Bridgette Wynn](https://www.flickr.com/photos/brwynn/) via [Flickr](https://www.flickr.com/photos/brwynn/4870133844/in/photolist-8qmH7U-a27zM3-7h1ntQ-FMpJ5V-8pVgfS-6fQV4k-8offGv-dLmtz1-cfnyyj-9pUG6t-7Q6mc8-dz82Ks-8AQuwa-95Zimm-8rDw4L-8AVpKL-9dhs6t-6FsRjV-8rDyvs-9qam69-8dBd7t-6FsRj6-92qxGP-4nkESf-8A1fhL-98ZQP6-bWpBQ8-95WfNF-6FwY8w-b7JpX2-ybecj-95WfRH-8efWsX-bRjj8e-9nesie-6FwY6N-oNMUh-a7CFuW-8AUEyj-qhHEZy-9cGQP9-qhGZcf-ortUC5-8C5CKb-7SynPk-8rDus3-95w2dP-8wsvSY-fFat1y-8KRKhJ)</div>

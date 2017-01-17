@@ -693,6 +693,10 @@ pre .xml .cdata {
   margin: 0;
 }
 
+.beyond-small h3 {
+  color: #987fff;
+}
+
 .img-with-caption h4 {
   margin-top: 0;
 }

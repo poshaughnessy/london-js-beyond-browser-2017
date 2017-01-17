@@ -513,13 +513,11 @@ navigator.bluetooth.requestDevice({
 
 <!-- And you can combine with WebRTC... -->
 
--- bg-fade beyond
+-- beyond-small
 
-## And beyond today...
-
---
-
-## Background sync ⛰
+### Beyond network downtime
+#### with
+## Background sync
 
 ```javascript
 navigator.serviceWorker.ready.then(function(reg) {
@@ -531,9 +529,11 @@ navigator.serviceWorker.ready.then(function(reg) {
 
 <div class="corner-logos">![Chrome](images/chrome.png)</div>
 
---
+-- beyond-small
 
-## Foreign fetch ✈️
+### Beyond single domain caching
+#### with
+## Foreign fetch
 
 ```
 Link: </service-worker.js>; rel="serviceworker"

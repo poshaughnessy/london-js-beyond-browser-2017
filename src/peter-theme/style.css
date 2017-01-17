@@ -429,11 +429,6 @@ pre .xml .cdata {
   color: #704dff;
 }
 
-.hljs-tag,
-.hljs-name {
-  color: #90f7f8;
-}
-
 .hljs-string {
   color: #987fff;
 }
@@ -590,6 +585,11 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
+.iframe .slide-content {
+  height: 100%;
+  padding: 0;
+}
+
 #slide-1 h1 {
   margin-top: 0.5em;
 }
@@ -668,14 +668,33 @@ pre .xml .cdata {
   background-image: url(images/ethernet-flickr_wikidave.jpg);
 }
 
+.slide.bg-aframe:after {
+  background-color: #eee;
+  background-image: url(images/aframe-basic.png);
+  background-position-y: bottom;
+}
+
+.beyond h1 {
+  margin-bottom: 0;
+  line-height: 1.3em;
+}
+
 .beyond h2,
 .purple-headers h2 {
   color: #987fff;
 }
 
-.beyond h2 + h4 {
+.beyond h4 {
   margin-bottom: 0;
   font-style: italic;
+}
+
+.beyond h4:nth-of-type(2) {
+  margin: 0;
+}
+
+.img-with-caption h4 {
+  margin-top: 0;
 }
 
 .img-with-caption p {

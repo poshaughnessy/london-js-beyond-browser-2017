@@ -343,7 +343,8 @@ toolbox.router.get('/profile', toolbox.fastest);
 ## Beyond the digital world
 #### with
 # Physical Web
-# & Web Bluetooth
+#### &
+# Web Bluetooth
 
 <div class="credit">[Rafael Romero](https://www.flickr.com/photos/35663018@N03/) via [Flickr](https://www.flickr.com/photos/35663018@N03/3952278050/)</div>
 
@@ -456,6 +457,46 @@ navigator.bluetooth.requestDevice({
 
 <div class="credit">[Kevin Harber](https://www.flickr.com/photos/kevharb/) via [Flickr](https://www.flickr.com/photos/kevharb/3065077415/)</div>
 
+-- iframe
+
+<!-- TODO replace with local copy if time -->
+
+<iframe width="90%" height="90%" style="margin-top:5vh" src="https://www.youtube.com/embed/mN9G6lQKVsI" frameborder="0" allowfullscreen></iframe>
+
+-- img-with-caption
+
+![A-Frame site](images/aframe-site.png)
+
+#### [A-Frame](https://aframe.io)
+
+<!-- Remember to say it includes the polyfill for Cardboard -->
+
+-- bg-lights-of-city
+
+```html
+<script src="aframe.js"></script>
+```
+
+-- bg-lights-of-city
+
+```html
+<a-scene>
+  <a-sphere position="0 1.25 -1" radius="1.25" 
+            color="#EF2D5E"></a-sphere>
+  <a-box position="-1 0.5 1" rotation="0 45 0" 
+         color="#4CC3D9"></a-box>
+  <a-cylinder position="1 0.75 1" radius="0.5" 
+              color="#FFC65D"></a-cylinder>
+  <a-plane rotation="-90 0 0" width="4" height="4" 
+            color="#7BC8A4"></a-plane>
+  <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+```
+
+-- iframe
+
+<iframe src="demos/aframe-basic/index.html" scrolling="no" width="90%" height="90%" style="margin-top:5vh"></iframe>
+
 --
 
 ## Browser enthusiasm (so far)
@@ -463,6 +504,14 @@ navigator.bluetooth.requestDevice({
 ![WebVR browser interest](images/webvr-browser-enthusiasm.png)
 
 <div class="caption">[iswebvrready.org/](https://iswebvrready.org/)</div>
+
+-- img-with-caption
+
+![Audience for Ada's WebVR talk](images/ada-webvr-crowd.jpg)
+
+<div class="caption">[&ldquo;Wow that was some night in VR!&rdquo; - Ada Rose Edwards](https://medium.com/samsung-internet-dev/wow-that-was-some-night-in-vr-ba091be38794)</div>
+
+<!-- And you can combine with WebRTC... -->
 
 -- bg-fade beyond
 

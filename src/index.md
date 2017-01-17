@@ -42,19 +42,19 @@ controls: false
 
 --
 
+![Address book access](images/address-book.png)
+
+<div class="credit">[The Next Web](http://thenextweb.com/mobile/2012/02/11/following-paths-contact-fiasco-instagram-silently-adds-a-contact-list-access-prompt/)</div>
+
+--
+
 ![comScore time spent](images/comscore-time-spent.png)
 
 --
 
-![comScore time spent](images/comscore-app-downloads.png)
+![comScore app downloads](images/comscore-app-downloads.png)
 
 <div class="credit">[comScore](http://www.comscore.com/Insights/Presentations-and-Whitepapers/2016/The-2016-US-Mobile-App-Report) via [recode.net](http://www.recode.net/2016/9/16/12933780/average-app-downloads-per-month-comscore)</div>
-
---
-
-![Address book access](images/address-book.png)
-
-<div class="credit">[The Next Web](http://thenextweb.com/mobile/2012/02/11/following-paths-contact-fiasco-instagram-silently-adds-a-contact-list-access-prompt/)</div>
 
 --
 

@@ -543,11 +543,15 @@ navigator.bluetooth.requestDevice({
 ## Background sync
 
 ```javascript
-navigator.serviceWorker.ready.then(function(reg) {
-    return reg.sync.register('syncTest');
-  }).then(function() {
-    log('Sync registered');
+// Register a one-off sync
+navigator.serviceWorker.ready.then(function(swReg) {
+    return swReg.sync.register('myLovelySync');
   });
+
+// service-worker.js
+self.addEventListener('sync', function(event) {
+  if (event.tag == 'myLovelySync') {
+    ...
 ```
 
 <div class="corner-logos">![Chrome](images/chrome.png)</div>

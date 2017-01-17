@@ -52,9 +52,11 @@ controls: false
 
 <div class="caption">[Reports](http://venturebeat.com/2013/04/03/the-mobile-war-is-over-and-the-app-has-won-80-of-mobile-time-spent-in-apps/) [suggest](http://flurrymobile.tumblr.com/post/127638842745/seven-years-into-the-mobile-revolution-content-is) 80%-90% of time is spent in apps</div>
 
---
+-- img-with-caption
 
 ![comScore app downloads](images/comscore-app-downloads.png)
+
+<div class="caption">Also: [&ldquo;Mobile users spend 80% of time in just five apps&rdquo;](http://marketingland.com/report-mobile-users-spend-80-percent-time-just-five-apps-116858)</div>
 
 <div class="credit">[comScore](http://www.comscore.com/Insights/Presentations-and-Whitepapers/2016/The-2016-US-Mobile-App-Report) via [recode.net](http://www.recode.net/2016/9/16/12933780/average-app-downloads-per-month-comscore)</div>
 

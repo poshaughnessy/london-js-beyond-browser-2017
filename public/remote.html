@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="manifest" href="remote-manifest.json">
   <title>Web Bluetooth Remote</title>
   <style>
     body {
@@ -96,6 +97,19 @@
     btnConnect.addEventListener('click', connect, false);
     btnLeft.addEventListener('click', left, false);
     btnRight.addEventListener('click', right, false);
+
+    if (navigator.serviceWorker) {
+
+      navigator.serviceWorker.register('/remote-sw.js')
+        .then(function(registration) {
+          console.log('Registration successful', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('Failed - service worker not installed', error);
+        });
+
+    }
+
   </script>
 </body>
 </html>

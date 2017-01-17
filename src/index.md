@@ -446,6 +446,8 @@ navigator.bluetooth.requestDevice({
 * [Bleno](https://github.com/sandeepmistry/bleno) combined with Web Sockets *(peripheral - Mac)*
 * Web Bluetooth *(central - Chrome for Android)*
 
+<div class="caption">[bit.ly/web-remote-video](https://twitter.com/poshaughnessy/status/820009510173573121)</div>
+
 -- img-with-caption
 
 ![puck.js](images/puckjs.jpg)

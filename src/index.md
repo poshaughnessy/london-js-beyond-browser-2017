@@ -193,26 +193,8 @@ navigator.serviceWorker.register('/service-worker.js')
 
 ```javascript
 // service-worker.js
-
-// NB. URLs, not filepaths!
-var RESOURCES = ['/images/logo.png', ...];
-
 self.addEventListener('install', function(event) {
-  function onInstall () {
-    return caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(RESOURCES);
-      });
-  }
-);
-```
-
---
-
-```javascript
-self.addEventListener('install', function(event) {
-  // Waits for clients using old SWs to be closed and/or 
-  // `event.waitUntil()`, unless `skipWaiting()`.
+  // Awaiting clients using old SWs to be closed
 });
 
 self.addEventListener('activate', function(event) {

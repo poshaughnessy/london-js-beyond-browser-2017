@@ -283,7 +283,7 @@ table th {
   font-weight: normal;
   text-shadow: none;
   -webkit-text-stroke-width: 0;
-  color: #666;
+  color: #aaa;
 }
 
 .credits {
@@ -684,4 +684,8 @@ pre .xml .cdata {
 
 .img-with-caption img {
   max-height: calc(100vh - 4em);
+}
+
+.grey-out {
+  filter: grayscale(1);
 }

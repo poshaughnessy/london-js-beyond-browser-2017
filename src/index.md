@@ -102,25 +102,6 @@ controls: false
 
 -- img-with-caption
 
-[![isserviceworkerready](images/isserviceworkerready.png)](https://jakearchibald.github.io/isserviceworkerready/)
-
-<div class="caption">[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)</div>
-
--- bg-safari bg-fade
-
-# What about Safari?
-
--- bg-offline bg-fade
-
-# Think of the network as 
-# an *enhancement*
-
---
-
-![Chrome service worker internals](images/chrome-service-worker-internals.png)
-
--- img-with-caption
-
 [![pwa.rocks](images/pwa-rocks.png)](https://pwa.rocks)
 
 <div class="caption">[pwa.rocks](https://pwa.rocks)</div>
@@ -141,6 +122,14 @@ controls: false
 
 <div class="caption">[&ldquo;PWA Technology helped my community following a natural disaster&rdquo; - InspireHub](https://inspirehub.ihubapp.org/stories/41314)</div>
 
+-- bg-buzz2 bg-fade beyond
+
+## Beyond the browser tab
+#### with
+# Service Workers
+
+<div class="credit">[Robert Mitchem](https://www.flickr.com/photos/29290711@N04/) via [Flickr](https://www.flickr.com/photos/29290711@N04/4299610660/in/photolist-7xWCsh-4p7WUc-c9SA1-4p7WUk-eekmjY-5wYXcL-eekpus-eTmXrz-qqcft4-eeeE7k-94caDx-FrAo5-c9RX3-c9Snm-nbYsTe-e3un1X-8fAVES-8fATZy-8fAVeE-8F2Rhe-8fAX5m-8fAUPU-bu5ZkE-8fxGyK-8fxGLk-8fxEvV-8fAVQN-8fAV2f-8fAUCJ-6JP7C2-c9Tti-c9T3i-c9TkX-PePL8-c9T9A-c9TfB-c9Stj-6LpjA7-c9THy-c9S9V-c9RAT-8vgbRB-8hBKqd-8uLTaQ-c9S3P-6LpjEb-72bsgt-c9SG9-c9TAV-c9SNK)</div>
+
 --
 
 <video controls width="80%">
@@ -150,13 +139,24 @@ controls: false
 
 <div class="caption">[https://snapw.at](snapw.at)</div>
 
--- bg-buzz2 bg-fade beyond
+-- img-with-caption
 
-## Beyond the browser tab
-#### with
-# Service Workers
+[![isserviceworkerready](images/isserviceworkerready.png)](https://jakearchibald.github.io/isserviceworkerready/)
 
-<div class="credit">[Robert Mitchem](https://www.flickr.com/photos/29290711@N04/) via [Flickr](https://www.flickr.com/photos/29290711@N04/4299610660/in/photolist-7xWCsh-4p7WUc-c9SA1-4p7WUk-eekmjY-5wYXcL-eekpus-eTmXrz-qqcft4-eeeE7k-94caDx-FrAo5-c9RX3-c9Snm-nbYsTe-e3un1X-8fAVES-8fATZy-8fAVeE-8F2Rhe-8fAX5m-8fAUPU-bu5ZkE-8fxGyK-8fxGLk-8fxEvV-8fAVQN-8fAV2f-8fAUCJ-6JP7C2-c9Tti-c9T3i-c9TkX-PePL8-c9T9A-c9TfB-c9Stj-6LpjA7-c9THy-c9S9V-c9RAT-8vgbRB-8hBKqd-8uLTaQ-c9S3P-6LpjEb-72bsgt-c9SG9-c9TAV-c9SNK)</div>
+<div class="caption">[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)</div>
+
+-- bg-safari bg-fade
+
+# What about Safari?
+
+-- bg-offline bg-fade
+
+# Think of the network as 
+# an *enhancement*
+
+--
+
+![Chrome service worker internals](images/chrome-service-worker-internals.png)
 
 --
 
@@ -308,7 +308,7 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <div class="credit">[Brandon Serna](https://www.flickr.com/photos/54732806@N03/) via [Flickr](https://www.flickr.com/photos/54732806@N03/5378370232/)</div>
 
-<!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png) ![Opera](images/opera.png)</div>-->
+<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png) ![Firefox](images/firefox.png)</div>
 
 -- img-with-caption
 
@@ -332,15 +332,121 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 ![Podle push debugging](images/podle-push-debug2.png)
 
+-- img-with-caption
+
+![Push notification anti-pattern](images/push-bad.jpg)
+
+<div class="caption">*Please* keep it [timely, relevant and precise!](https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/)</div>
+
 -- bg-buzz4 bg-fade beyond
 
 ## Beyond the digital world
 #### with
 # Physical Web
+# & Web Bluetooth
 
 <div class="credit">[Rafael Romero](https://www.flickr.com/photos/35663018@N03/) via [Flickr](https://www.flickr.com/photos/35663018@N03/3952278050/)</div>
 
 <!-- <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet beta](images/sbrowser5.2-beta.png) ![Firefox](images/firefox.png)</div> -->
+
+--
+
+![Physical Web](images/physical-web-google.png)
+
+<div class="corner-logos">![Chrome](images/chrome.png)</div>
+
+<!-- Not to be confused with Nearby... -->
+
+--
+
+![Project Magnet](images/project-magnet.png)
+
+<div class="corner-logos grey-out">![Firefox](images/firefox.png)</div>
+
+--
+
+![CloseBy](images/closeby.png)
+
+<div class="corner-logos">![Samsung Internet beta](images/sbrowser5.2-beta.png)</div>
+
+-- img-with-caption
+
+![Beacon toy app](images/beacon-toy-app.png)
+
+<div class="caption">[Beacon Toy (Android)](https://play.google.com/store/apps/details?id=com.uriio)</div>
+
+--
+
+![CloseBy](images/closeby-notification.png)
+
+-- 
+
+## Web Bluetooth
+
+```javascript
+navigator.bluetooth.requestDevice({
+  filters: [{
+    name: 'SomeAmazingRobot'
+  }],
+  optionalServices: ['battery_service']
+})
+...
+```
+
+<div class="corner-logos">![Chrome](images/chrome.png)</div>
+
+--
+
+![Bluetooth pairing prompt](images/bluetooth-pairing-prompt.png)
+
+--
+
+```javascript
+  ...
+  .then(device => device.gatt.connect())
+  .then(server => server.getPrimaryService('battery_service'))
+  .then(service => service.getCharacteristic('battery_level'))
+```
+
+--
+
+```javascript
+  ...
+  .then(characteristic => {
+    // Read battery level
+    return characteristic.readValue();
+  })
+  .then(value => {
+    var batteryLevel = value.getUint8(0);
+    console.log('Battery level', batteryLevel);
+  });
+```
+
+<div class="caption">[bit.ly/chrome-bluetooth-guide](http://bit.ly/chrome-bluetooth-guide)</div>
+
+--
+
+<video controls height="75%">
+  <source src="videos/webdrone-v1-1.webm"/>
+  <source src="videos/webdrone-v1-1.mp4"/>
+</video>
+
+<div class="caption">[bit.ly/web-bluetooth-drone](http://bit.ly/web-bluetooth-drone)</div>
+
+--
+
+## How I'm controlling these slides
+
+* [Bleno](https://github.com/sandeepmistry/bleno) combined with Web Sockets *(peripheral - Mac)*
+* Web Bluetooth *(central - Chrome for Android)*
+
+-- img-with-caption
+
+![puck.js](images/puckjs.jpg)
+
+<div class="caption">[puck.js](http://www.puck-js.com/)</div>
+
+<!-- TODO if time replace with my video! https://twitter.com/poshaughnessy/status/808065469001375744 -->
 
 -- bg-buzz5 bg-fade beyond
 
@@ -350,11 +456,17 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 <div class="credit">[Kevin Harber](https://www.flickr.com/photos/kevharb/) via [Flickr](https://www.flickr.com/photos/kevharb/3065077415/)</div>
 
+--
+
+## Browser enthusiasm (so far)
+
+![WebVR browser interest](images/webvr-browser-enthusiasm.png)
+
+<div class="caption">[iswebvrready.org/](https://iswebvrready.org/)</div>
+
 -- bg-fade beyond
 
-## Beyond today
-#### with
-# What's next 🆕
+## And beyond today...
 
 --
 

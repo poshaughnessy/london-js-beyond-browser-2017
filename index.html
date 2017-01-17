@@ -643,6 +643,10 @@ pre .xml .cdata {
   background-image: url(images/toy-story-alien-flickr_peterdutton.jpg);
 }
 
+.slide.bg-buzz-laser:after {
+  background-image: url(images/buzz-laser-flickr_joanne_lummy.jpg);
+}
+
 .slide.bg-buzz-bye:after {
   background-image: url(images/buzz-flickr_bridgettewynn.jpg);
 }
@@ -674,6 +678,7 @@ pre .xml .cdata {
 
 .slide.bg-safari:after {
   background-image: url(images/safari-flickr_triciahealey.jpg);
+  filter: blur(2px) grayscale(0.5) brightness(0.22);
 }
 
 .slide.bg-offline:after {
@@ -684,6 +689,11 @@ pre .xml .cdata {
   background-color: #eee;
   background-image: url(images/aframe-basic.png);
   background-position-y: bottom;
+}
+
+.bg-buzz-laser h4 {
+  margin-top: 1.5em;
+  font-size: 1.1em;
 }
 
 .beyond h1,
@@ -856,13 +866,14 @@ pre .xml .cdata {
     <section class="slide-content"><p><a href="https://jakearchibald.github.io/isserviceworkerready/"><img src="images/isserviceworkerready.png" alt="isserviceworkerready"></a></p>
 <div class="caption"><a href="https://jakearchibald.github.io/isserviceworkerready/">jakearchibald.github.io/isserviceworkerready/</a></div></section>
   </div>
-  <div class="slide hidden  bg-safari bg-fade" id="slide-21">
-    <section class="slide-content"><h1 id="what-about-safari-">What about Safari?</h1>
+  <div class="slide hidden  bg-safari bg-fade beyond" id="slide-21">
+    <section class="slide-content"><h2 id="what-about">What about</h2>
+<h1 id="safari-">Safari?</h1>
 </section>
   </div>
-  <div class="slide hidden  bg-offline bg-fade" id="slide-22">
-    <section class="slide-content"><h1 id="think-of-the-network-as">Think of the network as</h1>
-<h1 id="an-enhancement-">an <em>enhancement</em></h1>
+  <div class="slide hidden  bg-buzz-laser bg-fade" id="slide-22">
+    <section class="slide-content"><h2 id="progressive-enhancement">Progressive enhancement</h2>
+<h4 id="where-service-workers-are-available-you-can-think-of-the-network-as-an-enhancement-">Where service workers are available, you can think of the <em>network</em> as an enhancement!</h4>
 </section>
   </div>
   <div class="slide hidden" id="slide-23">

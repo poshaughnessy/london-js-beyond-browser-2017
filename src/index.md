@@ -585,6 +585,8 @@ Origin-Trial: token_obtained_from_signup
 #### Web Incubator Community Group — [wicg.io](https://wicg.io/)
 #### Chromium contributions — [samsung.github.io/Chromium/](http://samsung.github.io/Chromium/)
 
+<div class="credit">[Joe Shlabotnik](https://www.flickr.com/photos/joeshlabotnik) via [Flickr](https://www.flickr.com/photos/joeshlabotnik/3425126092/)</div> 
+
 -- bg-buzz-bye bg-fade
 
 # Thanks! 🙏

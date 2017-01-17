@@ -1204,11 +1204,15 @@ toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.network
     <section class="slide-content"><h3 id="beyond-network-downtime">Beyond network downtime</h3>
 <h4 id="with">with</h4>
 <h2 id="background-sync">Background sync</h2>
-<pre><code class="lang-javascript">navigator.serviceWorker.ready.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reg</span>) </span>{
-    <span class="hljs-keyword">return</span> reg.sync.register(<span class="hljs-string">'syncTest'</span>);
-  }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    log(<span class="hljs-string">'Sync registered'</span>);
-  });</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Register a one-off sync</span>
+navigator.serviceWorker.ready.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">swReg</span>) </span>{
+    <span class="hljs-keyword">return</span> swReg.sync.register(<span class="hljs-string">'myLovelySync'</span>);
+  });
+
+<span class="hljs-comment">// service-worker.js</span>
+self.addEventListener(<span class="hljs-string">'sync'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-keyword">if</span> (event.tag == <span class="hljs-string">'myLovelySync'</span>) {
+    ...</code></pre>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
   <div class="slide hidden  beyond-small" id="slide-62">

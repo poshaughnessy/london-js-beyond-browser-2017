@@ -472,7 +472,7 @@ navigator.bluetooth.requestDevice({
 
 ![A-Frame site](images/aframe-site.png)
 
-#### [A-Frame](https://aframe.io)
+#### [aframe.io](https://aframe.io)
 
 <!-- Remember to say it includes the polyfill for Cardboard -->
 

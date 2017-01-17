@@ -192,12 +192,12 @@ self.addEventListener('install', function(event) {
 
 ```javascript
 self.addEventListener('install', function(event) {
-  // Installed. Waits for clients using old SWs to be closed 
-  // and/or `event.waitUntil()`. Unless `skipWaiting()`.
+  // Waits for clients using old SWs to be closed and/or 
+  // `event.waitUntil()`, unless `skipWaiting()`.
 });
 
 self.addEventListener('activate', function(event) {
-  // Activated. Good time to clear out old caches.
+  // Good time to clear out old caches.
 });
 
 self.addEventListener('fetch', function(event) {
@@ -292,17 +292,13 @@ toolbox.router.get('/profile', toolbox.fastest);
 * “network only”
 * “cache only”
 
---
-
-## &lt;a download&gt; requests bypass SW
-
-<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a>
-
+<!--## &lt;a download&gt; requests bypass SW-->
+<!--<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=468227#c13"><img src="images/chromium-bug.png" alt="Chromium bug" width="75%"/></a>-->
 <!--<div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet](images/sbrowser5.0.png)</div>-->
 
 -- bg-buzz3 bg-fade beyond
 
-## Beyond browser engagement
+## Beyond regular engagement
 #### with
 # Push Notifications
 
@@ -515,6 +511,28 @@ navigator.bluetooth.requestDevice({
 
 -- beyond-small
 
+### Beyond clunky checkout forms
+#### with
+## Web Payments
+
+<div class="left" style="width:58%; font-size:0.9em;">
+<pre style="display:block;"><code class="lang-javascript"><span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
+  .show()
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uiResult</span>) </span>{
+    processPayment(uiResult);
+  })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    handlePaymentError(error);
+  });</code></pre>
+</div>
+<div class="right" style="width:38%">
+  <img alt="Payment Request example" src="images/payment-request-crop.png" style="margin:0 0 0 10px">
+</div>
+
+<div class="caption">[bit.ly/how-to-take-web-payments](http://bit.ly/how-to-take-web-payments)</div>
+
+-- beyond-small
+
 ### Beyond network downtime
 #### with
 ## Background sync
@@ -531,7 +549,7 @@ navigator.serviceWorker.ready.then(function(reg) {
 
 -- beyond-small
 
-### Beyond single domain caching
+### Beyond single origin caching
 #### with
 ## Foreign fetch
 

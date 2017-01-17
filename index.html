@@ -436,11 +436,6 @@ pre .xml .cdata {
   color: #704dff;
 }
 
-.hljs-tag,
-.hljs-name {
-  color: #90f7f8;
-}
-
 .hljs-string {
   color: #987fff;
 }
@@ -597,6 +592,11 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
+.iframe .slide-content {
+  height: 100%;
+  padding: 0;
+}
+
 #slide-1 h1 {
   margin-top: 0.5em;
 }
@@ -675,14 +675,33 @@ pre .xml .cdata {
   background-image: url(images/ethernet-flickr_wikidave.jpg);
 }
 
+.slide.bg-aframe:after {
+  background-color: #eee;
+  background-image: url(images/aframe-basic.png);
+  background-position-y: bottom;
+}
+
+.beyond h1 {
+  margin-bottom: 0;
+  line-height: 1.3em;
+}
+
 .beyond h2,
 .purple-headers h2 {
   color: #987fff;
 }
 
-.beyond h2 + h4 {
+.beyond h4 {
   margin-bottom: 0;
   font-style: italic;
+}
+
+.beyond h4:nth-of-type(2) {
+  margin: 0;
+}
+
+.img-with-caption h4 {
+  margin-top: 0;
 }
 
 .img-with-caption p {
@@ -987,7 +1006,8 @@ toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.network
     <section class="slide-content"><h2 id="beyond-the-digital-world">Beyond the digital world</h2>
 <h4 id="with">with</h4>
 <h1 id="physical-web">Physical Web</h1>
-<h1 id="-web-bluetooth">&amp; Web Bluetooth</h1>
+<h4 id="-">&amp;</h4>
+<h1 id="web-bluetooth">Web Bluetooth</h1>
 <div class="credit"><a href="https://www.flickr.com/photos/35663018@N03/">Rafael Romero</a> via <a href="https://www.flickr.com/photos/35663018@N03/3952278050/">Flickr</a></div>
 
 <!-- <div class="corner-logos">![Chrome](images/chrome.png) ![Samsung Internet beta](images/sbrowser5.2-beta.png) ![Firefox](images/firefox.png)</div> --></section>
@@ -1076,16 +1096,53 @@ toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.network
 <h1 id="webvr">WebVR</h1>
 <div class="credit"><a href="https://www.flickr.com/photos/kevharb/">Kevin Harber</a> via <a href="https://www.flickr.com/photos/kevharb/3065077415/">Flickr</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-54">
+  <div class="slide hidden  iframe" id="slide-54">
+    <section class="slide-content"><!-- TODO replace with local copy if time -->
+
+<iframe width="90%" height="90%" style="margin-top:5vh" src="https://www.youtube.com/embed/mN9G6lQKVsI" frameborder="0" allowfullscreen></iframe></section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-55">
+    <section class="slide-content"><p><img src="images/aframe-site.png" alt="A-Frame site"></p>
+<h4 id="-a-frame-https-aframe-io-"><a href="https://aframe.io">A-Frame</a></h4>
+<!-- Remember to say it includes the polyfill for Cardboard --></section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-56">
+    <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+</section>
+  </div>
+  <div class="slide hidden  bg-lights-of-city" id="slide-57">
+    <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"0 1.25 -1"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"1.25"</span> 
+            <span class="hljs-attr">color</span>=<span class="hljs-string">"#EF2D5E"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 0.5 1"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"0 45 0"</span> 
+         <span class="hljs-attr">color</span>=<span class="hljs-string">"#4CC3D9"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-cylinder</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"1 0.75 1"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"0.5"</span> 
+              <span class="hljs-attr">color</span>=<span class="hljs-string">"#FFC65D"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-cylinder</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-plane</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"-90 0 0"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"4"</span> 
+            <span class="hljs-attr">color</span>=<span class="hljs-string">"#7BC8A4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-plane</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-sky</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#ECECEC"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sky</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span></code></pre>
+</section>
+  </div>
+  <div class="slide hidden  iframe" id="slide-58">
+    <section class="slide-content"><iframe src="demos/aframe-basic/index.html" scrolling="no" width="90%" height="90%" style="margin-top:5vh"></iframe></section>
+  </div>
+  <div class="slide hidden" id="slide-59">
     <section class="slide-content"><h2 id="browser-enthusiasm-so-far-">Browser enthusiasm (so far)</h2>
 <p><img src="images/webvr-browser-enthusiasm.png" alt="WebVR browser interest"></p>
 <div class="caption"><a href="https://iswebvrready.org/">iswebvrready.org/</a></div></section>
   </div>
-  <div class="slide hidden  bg-fade beyond" id="slide-55">
+  <div class="slide hidden  img-with-caption" id="slide-60">
+    <section class="slide-content"><p><img src="images/ada-webvr-crowd.jpg" alt="Audience for Ada&#39;s WebVR talk"></p>
+<div class="caption"><a href="https://medium.com/samsung-internet-dev/wow-that-was-some-night-in-vr-ba091be38794">&ldquo;Wow that was some night in VR!&rdquo; - Ada Rose Edwards</a></div>
+
+<!-- And you can combine with WebRTC... --></section>
+  </div>
+  <div class="slide hidden  bg-fade beyond" id="slide-61">
     <section class="slide-content"><h2 id="and-beyond-today-">And beyond today...</h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-56">
+  <div class="slide hidden" id="slide-62">
     <section class="slide-content"><h2 id="background-sync-">Background sync ⛰</h2>
 <pre><code class="lang-javascript">navigator.serviceWorker.ready.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reg</span>) </span>{
     <span class="hljs-keyword">return</span> reg.sync.register(<span class="hljs-string">'syncTest'</span>);
@@ -1094,18 +1151,18 @@ toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.network
   });</code></pre>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden" id="slide-57">
+  <div class="slide hidden" id="slide-63">
     <section class="slide-content"><h2 id="foreign-fetch-">Foreign fetch ✈️</h2>
 <pre><code>Link: &lt;/service-worker.js&gt;; rel=&quot;serviceworker&quot;
 Origin-Trial: token_obtained_from_signup</code></pre>
 <p><a href="http://bit.ly/foreign-fetch">bit.ly/foreign-fetch</a></p>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden  bg-buzz6 bg-fade" id="slide-58">
+  <div class="slide hidden  bg-buzz6 bg-fade" id="slide-64">
     <section class="slide-content"><h1 id="beyond-the-browser-">Beyond the <em>Browser</em></h1>
 <div class="credit"><a href="https://www.flickr.com/photos/payayita/">payayita</a> via <a href="https://www.flickr.com/photos/payayita/1129150332/">Flickr</a></div></section>
   </div>
-  <div class="slide hidden  bg-buzz-bye bg-fade" id="slide-59">
+  <div class="slide hidden  bg-buzz-bye bg-fade" id="slide-65">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <h2 id="-poshaughnessy-https-twitter-com-poshaughnessy-"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h2>
 <h2 id="-samsunginternet-https-twitter-com-samsunginternet-"><a href="https://twitter.com/samsunginternet">@samsunginternet</a></h2>

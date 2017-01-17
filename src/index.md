@@ -58,7 +58,7 @@ controls: false
 
 -- img-with-caption
 
-![comScore time spent](images/comscore-time-spent.png)
+![comScore time spent](images/comscore-time-spent.jpg)
 
 <div class="caption">[Reports](http://venturebeat.com/2013/04/03/the-mobile-war-is-over-and-the-app-has-won-80-of-mobile-time-spent-in-apps/) [suggest](http://flurrymobile.tumblr.com/post/127638842745/seven-years-into-the-mobile-revolution-content-is) 80%-90% of time is spent in apps</div>
 
@@ -108,13 +108,13 @@ controls: false
 
 --
 
-![Web nearing parity with native](images/web-native-parity.png)
+![Web nearing parity with native](images/web-native-parity.jpg)
 
 <div class="credit">[What Comes Next For The Web? - Paul Kinlan](https://www.youtube.com/watch?v=YJwrBbze_Ec)</div>
 
 -- bg-white
 
-[![Browser representation at PWA Dev Summit](images/pwa-dev-summit.png)](https://twitter.com/nicoinch/status/745216197004754944)
+[![Browser representation at PWA Dev Summit](images/pwa-dev-summit.jpg)](https://twitter.com/nicoinch/status/745216197004754944)
 
 -- img-with-caption
 
@@ -315,7 +315,7 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 -- img-with-caption
 
-![Podle push notification](images/podle-push-notification.png)
+![Podle push notification](images/podle-push-notification.jpg)
 
 <div class="caption">[podle.audio](https://podle.audio)</div>
 
@@ -375,7 +375,7 @@ toolbox.router.get('/profile', toolbox.fastest);
 
 --
 
-![CloseBy](images/closeby-notification.png)
+![CloseBy](images/closeby-notification.jpg)
 
 -- 
 

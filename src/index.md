@@ -150,11 +150,12 @@ controls: false
 ## What about 
 # Safari?
 
--- bg-buzz-laser bg-fade
+-- bg-buzz-laser progressive-enhancement bg-fade
 
 ## Progressive enhancement
 
-#### Where service workers are available, you can think of the *network* as an enhancement!
+#### Where service workers are available, you can think of the 
+###*network* as an enhancement!
 
 --
 

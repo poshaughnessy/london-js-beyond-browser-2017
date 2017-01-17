@@ -86,7 +86,9 @@ controls: false
 
 <div class="credit">[Morris Quality Bakers](http://www.morrisqualitybakers.co.uk/goods/hovis-best-of-both-thick/)</div>
 
--- bg-pwas
+--
+
+![Progressive Web Apps logo](images/pwa-logo.jpg)
 
 <!-- > &ldquo;PWAs are all about removing friction&rdquo; 🏎-->
 

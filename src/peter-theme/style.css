@@ -652,10 +652,6 @@ pre .xml .cdata {
   background-image: url(images/Steve_Jobs_presents_iPhone.jpg);
 }
 
-.slide.bg-pwas:after {
-  background-image: url(images/pwa-logo.jpg);
-}
-
 .slide.bg-pwarocks {
   background-color: #222;
 }

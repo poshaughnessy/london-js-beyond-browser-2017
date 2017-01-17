@@ -46,9 +46,11 @@ controls: false
 
 <div class="credit">[The Next Web](http://thenextweb.com/mobile/2012/02/11/following-paths-contact-fiasco-instagram-silently-adds-a-contact-list-access-prompt/)</div>
 
---
+-- img-with-caption
 
 ![comScore time spent](images/comscore-time-spent.png)
+
+<div class="caption">[Reports](http://venturebeat.com/2013/04/03/the-mobile-war-is-over-and-the-app-has-won-80-of-mobile-time-spent-in-apps/) [suggest](http://flurrymobile.tumblr.com/post/127638842745/seven-years-into-the-mobile-revolution-content-is) 80%-90% of time is spent in apps</div>
 
 --
 

@@ -504,7 +504,7 @@ navigator.bluetooth.requestDevice({
 
 ![WebVR browser interest](images/webvr-browser-enthusiasm.png)
 
-<div class="caption">[iswebvrready.org/](https://iswebvrready.org/)</div>
+<div class="caption">[iswebvrready.org](https://iswebvrready.org/)</div>
 
 -- img-with-caption
 

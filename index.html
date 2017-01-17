@@ -700,6 +700,10 @@ pre .xml .cdata {
   margin: 0;
 }
 
+.beyond-small h3 {
+  color: #987fff;
+}
+
 .img-with-caption h4 {
   margin-top: 0;
 }
@@ -1138,12 +1142,10 @@ toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.network
 
 <!-- And you can combine with WebRTC... --></section>
   </div>
-  <div class="slide hidden  bg-fade beyond" id="slide-61">
-    <section class="slide-content"><h2 id="and-beyond-today-">And beyond today...</h2>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-62">
-    <section class="slide-content"><h2 id="background-sync-">Background sync ⛰</h2>
+  <div class="slide hidden  beyond-small" id="slide-61">
+    <section class="slide-content"><h3 id="beyond-network-downtime">Beyond network downtime</h3>
+<h4 id="with">with</h4>
+<h2 id="background-sync">Background sync</h2>
 <pre><code class="lang-javascript">navigator.serviceWorker.ready.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reg</span>) </span>{
     <span class="hljs-keyword">return</span> reg.sync.register(<span class="hljs-string">'syncTest'</span>);
   }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
@@ -1151,20 +1153,22 @@ toolbox.router.get(<span class="hljs-string">'/images/*'</span>, toolbox.network
   });</code></pre>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden" id="slide-63">
-    <section class="slide-content"><h2 id="foreign-fetch-">Foreign fetch ✈️</h2>
+  <div class="slide hidden  beyond-small" id="slide-62">
+    <section class="slide-content"><h3 id="beyond-single-domain-caching">Beyond single domain caching</h3>
+<h4 id="with">with</h4>
+<h2 id="foreign-fetch">Foreign fetch</h2>
 <pre><code>Link: &lt;/service-worker.js&gt;; rel=&quot;serviceworker&quot;
 Origin-Trial: token_obtained_from_signup</code></pre>
 <p><a href="http://bit.ly/foreign-fetch">bit.ly/foreign-fetch</a></p>
 <div class="corner-logos"><img src="images/chrome.png" alt="Chrome"></div></section>
   </div>
-  <div class="slide hidden  bg-buzz6 bg-fade" id="slide-64">
+  <div class="slide hidden  bg-buzz6 bg-fade" id="slide-63">
     <section class="slide-content"><h1 id="beyond-the-browser-">Beyond the <em>Browser</em></h1>
 <div class="caption"><a href="https://medium.com/samsung-internet-dev/is-browser-still-the-right-word-6815f93b866c">bit.ly/is-browser-still-the-right-word</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/payayita/">payayita</a> via <a href="https://www.flickr.com/photos/payayita/1129150332/">Flickr</a></div></section>
   </div>
-  <div class="slide hidden  bg-buzz-bye bg-fade" id="slide-65">
+  <div class="slide hidden  bg-buzz-bye bg-fade" id="slide-64">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <h2 id="-poshaughnessy-https-twitter-com-poshaughnessy-"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h2>
 <h2 id="-samsunginternet-https-twitter-com-samsunginternet-"><a href="https://twitter.com/samsunginternet">@samsunginternet</a></h2>

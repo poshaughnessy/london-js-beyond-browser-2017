@@ -145,14 +145,16 @@ controls: false
 
 <div class="caption">[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)</div>
 
--- bg-safari bg-fade
+-- bg-safari bg-fade beyond
 
-# What about Safari?
+## What about 
+# Safari?
 
--- bg-offline bg-fade
+-- bg-buzz-laser bg-fade
 
-# Think of the network as 
-# an *enhancement*
+## Progressive enhancement
+
+#### Where service workers are available, you can think of the *network* as an enhancement!
 
 --
 

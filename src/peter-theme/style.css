@@ -636,6 +636,10 @@ pre .xml .cdata {
   background-image: url(images/toy-story-alien-flickr_peterdutton.jpg);
 }
 
+.slide.bg-buzz-laser:after {
+  background-image: url(images/buzz-laser-flickr_joanne_lummy.jpg);
+}
+
 .slide.bg-buzz-bye:after {
   background-image: url(images/buzz-flickr_bridgettewynn.jpg);
 }
@@ -667,6 +671,7 @@ pre .xml .cdata {
 
 .slide.bg-safari:after {
   background-image: url(images/safari-flickr_triciahealey.jpg);
+  filter: blur(2px) grayscale(0.5) brightness(0.22);
 }
 
 .slide.bg-offline:after {
@@ -677,6 +682,11 @@ pre .xml .cdata {
   background-color: #eee;
   background-image: url(images/aframe-basic.png);
   background-position-y: bottom;
+}
+
+.bg-buzz-laser h4 {
+  margin-top: 1.5em;
+  font-size: 1.1em;
 }
 
 .beyond h1,

@@ -40,6 +40,16 @@ controls: false
 
 <div class="credit">[xkcd](http://xkcd.com/934/)</div>
 
+-- two-quotes
+
+>&ldquo;Why Facebook ditched the Mobile Web&rdquo;
+
+<div class="caption">[Read Write Web](http://readwrite.com/2012/08/23/how-facebook-ditched-the-mobile-web-went-native-with-its-new-ios-app/)</div>
+
+>&ldquo;Why LinkedIn dumped HTML5&rdquo;
+
+<div class="caption">[Venture Beat](http://venturebeat.com/2013/04/17/linkedin-mobile-web-breakup/)</div>
+
 --
 
 ![Address book access](images/address-book.png)

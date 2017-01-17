@@ -707,7 +707,7 @@ pre .xml .cdata {
 }
 
 .progressive-enhancement h4 {
-  font-size: 1em; 
+  font-size: 1em;
   margin: 1.5em 0 0 0;
 }
 
@@ -749,4 +749,12 @@ pre .xml .cdata {
 
 .grey-out {
   filter: grayscale(1);
+}
+
+.two-quotes .caption {
+  margin: 0 0 3em 0;
+}
+
+.two-quotes p {
+  margin: 1em 0 0.5em 0;
 }

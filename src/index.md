@@ -120,7 +120,7 @@ controls: false
 
 [![pwa.rocks](images/pwa-rocks.png)](https://pwa.rocks)
 
-<div class="caption">[pwa.rocks](https://pwa.rocks)</div>
+<div class="caption">[pwa.rocks](https://pwa.rocks) — [&ldquo;Flipkart triples time-on-site with PWA&rdquo;](https://developers.google.com/web/showcase/2016/flipkart)</div>
 
 -- img-with-caption
 

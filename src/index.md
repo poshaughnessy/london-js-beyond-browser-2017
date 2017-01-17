@@ -570,6 +570,14 @@ Origin-Trial: token_obtained_from_signup
 
 <div class="credit">[payayita](https://www.flickr.com/photos/payayita/) via [Flickr](https://www.flickr.com/photos/payayita/1129150332/)</div>
 
+-- beyond get-involved bg-toy-story-alien bg-fade
+
+## We can all help to shape
+# the future of the web
+
+#### Web Incubator Community Group — [wicg.io](https://wicg.io/)
+#### Chromium contributions — [samsung.github.io/Chromium/](http://samsung.github.io/Chromium/)
+
 -- bg-buzz-bye bg-fade
 
 # Thanks! 🙏

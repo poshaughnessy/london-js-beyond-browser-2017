@@ -548,6 +548,8 @@ Origin-Trial: token_obtained_from_signup
 
 # Beyond the *Browser*
 
+<div class="caption">[bit.ly/is-browser-still-the-right-word](https://medium.com/samsung-internet-dev/is-browser-still-the-right-word-6815f93b866c)</div>
+
 <div class="credit">[payayita](https://www.flickr.com/photos/payayita/) via [Flickr](https://www.flickr.com/photos/payayita/1129150332/)</div>
 
 -- bg-buzz-bye bg-fade

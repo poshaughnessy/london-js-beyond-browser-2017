@@ -152,11 +152,17 @@ var SWIPE_X_MIN = 50,
     startX;
 
 document.body.addEventListener('touchstart', function(e) {
+  if (!e.touches || e.touches.length !== 1) {
+    return;
+  }
   var touch = e.touches[0];
   startX = touch.screenX;
 }, false);
 
 document.body.addEventListener('touchend', function(e) {
+  if (!e.touches || e.touches.length !== 1) {
+    return;
+  }
   var touch = e.changedTouches[0];
   var swipeXDist = touch.screenX - startX;
   if (swipeXDist < -SWIPE_X_MIN) {

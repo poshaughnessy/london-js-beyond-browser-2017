@@ -47,8 +47,6 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: #222;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -551,33 +549,22 @@ pre .xml .cdata {
   overflow: auto;
   position: relative;
 }
-/* Vignette effect */
-.slide.bg-fade:before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  display: block;
-  box-shadow: inset 0 0 12em #000;
-  width: 100%;
-  height: 100%;
-}
 /* Background image */
-.slide:after {
+.slide:before {
   content: "";
   position: fixed;
   left: 0;
-  right: 0;
-  z-index: 0;
+  top: 0;
+  z-index: -1;
   display: block;
+  background-color: #222;
   background-size: cover;
   background-position: center center;
   width: 100%;
   height: 100%;
 }
 /* Background image to render things on top of */
-.slide.bg-fade:after {
+.slide.bg-fade:before {
   filter: blur(2px) grayscale(0.5) brightness(0.2);
 }
 .slide-content {
@@ -603,78 +590,74 @@ pre .xml .cdata {
   margin-top: 6em;
 }
 
-.slide.bg-white:after {
+.slide.bg-white:before {
   background-color: #fff;
 }
 
-.slide.bg-buzz1:after {
+.slide.bg-buzz1:before {
   background-image: url(images/buzz-flickr_armadillo444.jpg);
   filter: blur(2px) grayscale(0.5) brightness(0.175);
 }
 
-.slide.bg-buzz2:after {
+.slide.bg-buzz2:before {
   background-image: url(images/buzz-flickr_robertmitchem.jpg);
 }
 
-.slide.bg-buzz3:after {
+.slide.bg-buzz3:before {
   background-image: url(images/buzz-flickr_brandonserna.jpg);
 }
 
-.slide.bg-buzz4:after {
+.slide.bg-buzz4:before {
   background-image: url(images/buzz-flickr_rafaelromero.jpg);
 }
 
-.slide.bg-buzz5:after {
+.slide.bg-buzz5:before {
   background-image: url(images/buzz-flickr_kevinharber.jpg);
 }
 
-.slide.bg-buzz6:after {
+.slide.bg-buzz6:before {
   background-image: url(images/buzz-flickr_payayita.jpg);
 }
 
-.slide.bg-toy-story-alien:after {
+.slide.bg-toy-story-alien:before {
   background-image: url(images/toy-story-alien-flickr_joeshlabotnik.jpg);
 }
 
-.slide.bg-buzz-laser:after {
+.slide.bg-buzz-laser:before {
   background-image: url(images/buzz-laser-flickr_joanne_lummy.jpg);
 }
 
-.slide.bg-buzz-bye:after {
+.slide.bg-buzz-bye:before {
   background-image: url(images/buzz-flickr_bridgettewynn.jpg);
 }
 
-.slide.bg-2017:after {
+.slide.bg-2017:before {
   background-image: url(images/new-years-eve-1664737_1920.jpg);
 }
 
-.slide.bg-iphone-launch:after {
+.slide.bg-iphone-launch:before {
   background-image: url(images/Steve_Jobs_presents_iPhone.jpg);
-}
-
-.slide.bg-pwarocks {
-  background-color: #222;
 }
 
 .slide.bg-outweb {
   background-color: #fafafa;
 }
 
-.slide.bg-best-of-both:after {
+.slide.bg-best-of-both:before {
   background-image: url(images/hovis-best-of-both.jpg);
   filter: blur(2px) grayscale(0.5) brightness(0.125);
 }
 
-.slide.bg-safari:after {
+.slide.bg-safari:before {
   background-image: url(images/safari-flickr_triciahealey.jpg);
   filter: blur(2px) grayscale(0.5) brightness(0.22);
 }
 
-.slide.bg-offline:after {
+.slide.bg-offline:before {
   background-image: url(images/ethernet-flickr_wikidave.jpg);
 }
 
-.slide.bg-aframe:after {
+.slide.bg-aframe:before {
   background-color: #eee;
   background-image: url(images/aframe-basic.png);
   background-position-y: bottom;

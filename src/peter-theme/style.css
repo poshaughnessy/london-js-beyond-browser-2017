@@ -91,6 +91,7 @@ img {
   position: absolute;
   bottom: 10px;
   left: 10px;
+  z-index: 10;
 }
 
 .arrow {
@@ -98,13 +99,14 @@ img {
   height: 0;
   width: 0;
   margin-right: 15px;
-  border: 15px solid #272822;
+  border: 15px solid #ccc;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 
 .prev {
@@ -120,7 +122,7 @@ img {
   border-right-width: 25px;
   border-bottom-color: transparent;
   border-left-width: 0;
-  border-left-color: #272822;
+  border-left-color: #ccc;
 }
 
 .next {
@@ -136,7 +138,7 @@ img {
   border-right-color: transparent;
   border-right-width: 0;
   border-left-width: 25px;
-  border-left-color: #272822;
+  border-left-color: #ccc;
 }
 
 h1, h2 {
@@ -260,7 +262,7 @@ table th {
 .progress-bar {
   height: 3px;
   width: 0;
-  background-color: #a6e22e;
+  background-color: #987fff;
   -webkit-transition: width .15s ease-out;
   -moz-transition: width .15s ease-out;
   -o-transition: width .15s ease-out;

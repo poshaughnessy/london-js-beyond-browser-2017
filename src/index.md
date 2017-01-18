@@ -1,7 +1,7 @@
 title: Beyond the Browser
 output: public/index.html
 theme: peter-theme
-controls: false
+controls: true
 
 -- bg-buzz1 bg-fade
 
